@@ -5,7 +5,7 @@ export default function Projects() {
         <>
             <div className="flex flex-col pb-8">
                 <div>
-                    <div className="text-3xl md:text-6xl px-2 md:px-0 py-1 md:py-4">
+                    <div className="text-3xl md:text-6xl px-2 md:px-0 py-1 md:py-4" id="projects">
                         Projects
                     </div>
                 </div>
