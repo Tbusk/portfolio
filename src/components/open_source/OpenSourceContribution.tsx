@@ -9,7 +9,7 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
     return (
         <>
             <div>
-                <div className="text-2xl pb-2 px-2 md:px-0">
+                <div className="text-2xl pb-2 px-2 md:px-0 font-bold">
                     {props.name}
                 </div>
                 <div className="pb-2 px-2 md:px-0">
