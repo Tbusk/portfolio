@@ -69,6 +69,7 @@ export default function Projects() {
                             `Vite`,
                             `Tailwind CSS`,
                         ]}
+                        link="https://github.com/Tbusk/portfolio"
                     />
 
                     <Project
