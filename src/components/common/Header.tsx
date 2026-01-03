@@ -14,7 +14,7 @@ export default function Header() {
                 <div>
 
                     {/* Non-Mobile */}
-                    <ul className="gap-8 justify-center hidden sm:flex py-8">
+                    <ul className="gap-8 justify-center hidden md:flex py-8">
                         <li className={navbarItemStyle}>
                             <a href="#home">
                                 Home
@@ -23,6 +23,11 @@ export default function Header() {
                         <li className={navbarItemStyle}>
                             <a href="#experience">
                                 Experience
+                            </a>
+                        </li>
+                        <li className={navbarItemStyle}>
+                            <a href="#skills">
+                                Skills
                             </a>
                         </li>
                         <li className={navbarItemStyle}>
@@ -43,7 +48,7 @@ export default function Header() {
                     </ul>
 
                     {/* Mobile */}
-                    <div className="sm:hidden flex fixed w-full h-full justify-end">
+                    <div className="md:hidden flex fixed w-full h-full justify-end">
                         <div className="fixed pr-4 pt-2">
                             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-white p-2 rounded-full border-2 border-gray-100">
                                 <img src={hamburgerIcon} alt="Hamburger Icon" height={28}
@@ -65,6 +70,11 @@ export default function Header() {
                                     <li className={navbarItemStyleMobile}>
                                         <a href="#experience" onClick={() => setIsMenuOpen(false)}>
                                             Experience
+                                        </a>
+                                    </li>
+                                    <li className={navbarItemStyleMobile}>
+                                        <a href="#skills" onClick={() => setIsMenuOpen(false)}>
+                                            Skills
                                         </a>
                                     </li>
                                     <li className={navbarItemStyleMobile}>

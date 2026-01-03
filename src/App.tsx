@@ -6,6 +6,7 @@ import Footer from "./components/common/Footer.tsx";
 import Experience from "./components/experience/Experience.tsx";
 import OpenSourceContributions from "./components/open_source/OpenSourceContributions.tsx";
 import Header from "./components/common/Header.tsx";
+import Skills from "./components/skills/Skills.tsx";
 
 export function App() {
 
@@ -14,6 +15,7 @@ export function App() {
             <Header />
             <Homepage />
             <Experience />
+            <Skills />
             <Education />
             <Projects />
             <OpenSourceContributions />
