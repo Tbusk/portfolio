@@ -11,12 +11,16 @@ export default function Socials() {
                     link="https://github.com/Tbusk"
                     logo={githubIcon}
                     logoAlt="GitHub Icon"
+                    imageHeight={32}
+                    imageWidth={32}
                 />
                 <Social
                     name="LinkedIn"
                     link="https://www.linkedin.com/in/trevor-busk/"
                     logo={linkedinIcon}
                     logoAlt="LinkedIn Icon"
+                    imageHeight={26}
+                    imageWidth={26}
                 />
             </div>
         </>
