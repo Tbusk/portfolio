@@ -1,6 +1,7 @@
 interface OpenSourceContributionProps {
     name: string;
     link: string;
+    description: string;
     content: string[];
 }
 
@@ -8,10 +9,11 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
     return (
         <>
             <div>
-                <div className="text-2xl pb-2 px-2">
-                    <a className="hover:underline" href={props.link}>
-                        {props.name}
-                    </a>
+                <div className="text-2xl pb-2 px-2 md:px-0">
+                    {props.name}
+                </div>
+                <div className="pb-2 px-2 md:px-0">
+                    {props.description}
                 </div>
                 <div>
                     <ul className="list-disc pl-6 md:pl-4">
@@ -22,6 +24,18 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
                         ))}
                     </ul>
                 </div>
+
+                {props.link ?
+                    <div className="px-2 pt-2 flex">
+                        <div className="border rounded-2xl py-1 px-4 hover:scale-110 hover:underline active:scale-95">
+                            <a href={props.link}>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    :
+                    ''
+                }
             </div>
         </>
     )
