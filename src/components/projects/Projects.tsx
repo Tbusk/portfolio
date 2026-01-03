@@ -58,12 +58,14 @@ export default function Projects() {
                         name="Portfolio"
                         description={
                             `
-                            Created a portfolio website showcasing my projects, experience, skills, and more.
+                            Created this portfolio website showcasing my projects, experience, skills, and more.
                             `
                         }
                         metrics={[
                         ]}
                         techStack={[
+                            `HTML`,
+                            `CSS`,
                             `TypeScript`,
                             `Preact`,
                             `Vite`,
