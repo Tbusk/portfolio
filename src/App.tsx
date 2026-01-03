@@ -1,11 +1,10 @@
-import './app.css'
-import Homepage from "./components/Homepage.tsx";
-import Education from "./components/Education.tsx";
-import Projects from "./components/Projects.tsx";
-import Contact from "./components/Contact.tsx";
-import Footer from "./components/Footer.tsx";
-import Experience from "./components/Experience.tsx";
-import OpenSourceContributions from "./components/OpenSourceContributions.tsx";
+import Homepage from "./components/homepage/Homepage.tsx";
+import Education from "./components/education/Education.tsx";
+import Projects from "./components/projects/Projects.tsx";
+import Contact from "./components/contact/Contact.tsx";
+import Footer from "./components/common/Footer.tsx";
+import Experience from "./components/experience/Experience.tsx";
+import OpenSourceContributions from "./components/open_source/OpenSourceContributions.tsx";
 
 export function App() {
 
