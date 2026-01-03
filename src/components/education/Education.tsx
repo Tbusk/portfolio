@@ -4,7 +4,7 @@ export default function Education() {
     return (
         <>
             <div className="flex flex-col pb-8">
-                <div className="text-3xl md:text-6xl py-1 md:py-4 px-2 md:px-0" id="education">
+                <div className="text-3xl md:text-5xl py-1 md:py-4 px-2 md:px-0" id="education">
                     Education
                 </div>
 

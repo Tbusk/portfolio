@@ -4,7 +4,7 @@ export default function Experience() {
     return (
         <>
             <div className="flex flex-col px-2 pb-8">
-                <div className="text-3xl md:text-6xl py-1 md:py-4" id="experience">
+                <div className="text-3xl md:text-5xl py-1 md:py-4" id="experience">
                     Experience
                 </div>
 
