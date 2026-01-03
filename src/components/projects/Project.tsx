@@ -10,7 +10,7 @@ export default function Project(props: ProjectProps) {
     return (
         <>
             <div>
-                <div className="text-2xl font-bold pb-2 px-2 text-center md:text-start">
+                <div className="text-2xl font-bold pb-2 px-2 ">
                     {props.name}
                 </div>
                 <div className="px-2 pb-4">
@@ -54,7 +54,7 @@ export default function Project(props: ProjectProps) {
                 )}
 
                 {props.link ?
-                    <div className="px-2 pt-2 flex justify-center md:justify-start">
+                    <div className="px-2 pt-2 flex">
                         <div className="border rounded-2xl py-1 px-4 hover:scale-110 hover:underline active:scale-95">
                             <a href={props.link}>
                                 View Project

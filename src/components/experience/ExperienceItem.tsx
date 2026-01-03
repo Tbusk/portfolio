@@ -12,15 +12,15 @@ export default function ExperienceItem(props: ExperienceItemProps) {
         <>
             <div>
 
-                <div className="text-lg text-center md:text-start pb-2">
+                <div className="text-lg pb-2">
                     {props.startDate} - {props.endDate}
                 </div>
 
-                <div className="text-2xl text-center md:text-start font-bold pb-2">
+                <div className="text-2xl font-bold pb-2">
                     {props.jobTitle}
                 </div>
 
-                <div className="text-lg text-center md:text-start pb-2">
+                <div className="text-lg pb-2">
                     {props.website ? (
                         <a className="hover:underline" href={props.website}>
                             {props.company}

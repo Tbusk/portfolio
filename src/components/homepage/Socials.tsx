@@ -1,5 +1,5 @@
-import githubIcon from '../assets/github_icon.svg';
-import linkedinIcon from '../assets/linkedin_icon.svg';
+import githubIcon from '../../assets/github_icon.svg';
+import linkedinIcon from '../../assets/linkedin_icon.svg';
 import Social from "./Social.tsx";
 
 export default function Socials() {

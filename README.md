@@ -1,7 +1,27 @@
-# My Portfolio
+# Portfolio
 
-Hi, I'm Trevor Busk, and this is my portfolio showcasing my experience, projects, skills, and more.
+This repository contains my portfolio, showcasing my software development journey.
 
-## Technologies
+## Contents
 
-This project uses TypeScript, Preact, Vite, and TailWindCSS.
+- Homepage
+- Experience
+- Education
+- Projects
+- Open Source Contributions
+- Social Media Links
+
+## Tech Stack
+
+- HTML
+- CSS
+- TypeScript
+- Preact
+- Tailwind CSS
+- Vite
+
+## Deployment
+
+This web app is deployed to GitHub Pages automatically via GitHub Actions.
+
+It is live on [tbusk.com](https://tbusk.com)
