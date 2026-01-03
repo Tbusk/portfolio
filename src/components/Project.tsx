@@ -55,7 +55,7 @@ export default function Project(props: ProjectProps) {
 
                 {props.link ?
                     <div className="px-2 pt-2 flex justify-center md:justify-start">
-                        <div className="border rounded-2xl py-1 px-4">
+                        <div className="border rounded-2xl py-1 px-4 hover:scale-110 hover:underline active:scale-95">
                             <a href={props.link}>
                                 View Project
                             </a>

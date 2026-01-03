@@ -8,8 +8,8 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
     return (
         <>
             <div>
-                <div className="text-2xl pb-2 text-center md:text-start px-2">
-                    <a href={props.link}>
+                <div className="text-2xl pb-2 text-center md:text-start">
+                    <a className="hover:underline" href={props.link}>
                         {props.name}
                     </a>
                 </div>

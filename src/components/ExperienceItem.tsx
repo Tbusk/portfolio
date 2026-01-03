@@ -21,7 +21,11 @@ export default function ExperienceItem(props: ExperienceItemProps) {
                 </div>
 
                 <div className="text-lg text-center md:text-start pb-2">
-                    {props.website ? <a href={props.website}>{props.company}</a> : `${props.company}`}
+                    {props.website ? (
+                        <a className="hover:underline" href={props.website}>
+                            {props.company}
+                        </a>
+                    ) : `${props.company}`}
                 </div>
 
                 <ul className="list-disc pl-4">
