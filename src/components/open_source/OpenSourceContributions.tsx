@@ -11,7 +11,7 @@ export default function OpenSourceContributions() {
                 </div>
                 <div className="flex flex-col gap-8 pt-2">
                     <OpenSourceContribution
-                        name="vala-Lang / vala-docs"
+                        name="vala-lang / vala-docs"
                         link="https://github.com/vala-lang/vala-docs"
                         description={
                         `Documentation website for the Vala programming language live at docs.vala.dev`
