@@ -5,7 +5,7 @@ export default function OpenSourceContributions() {
         <>
             <div className="flex flex-col pb-4">
                 <div>
-                    <div className="text-3xl md:text-6xl text-center md:text-start py-1 md:py-4">
+                    <div className="text-3xl md:text-6xl px-2 md:px-0 py-1 md:py-4">
                         Open Source Contributions
                     </div>
                 </div>
