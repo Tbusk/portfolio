@@ -10,11 +10,12 @@ export default function Education() {
 
                 <div className="flex flex-col gap-8 pt-2">
                     <EducationItem
-                        name="Bachelor of Science (BSc.) - Software Engineering"
+                        name="Bachelor of Science (BSc.) - Digital Media Software Engineering"
                         institution="Ferris State University"
                         startDate="2022"
                         endDate="May 2026"
                         gpa="4.0"
+                        link="https://ferris.edu"
                     />
 
                     <EducationItem
@@ -23,6 +24,7 @@ export default function Education() {
                         startDate="Sept 2016"
                         endDate="May 2021"
                         gpa="3.5"
+                        link="https://kvcc.edu"
                     />
 
                     <EducationItem
@@ -31,6 +33,7 @@ export default function Education() {
                         startDate="Sept 2015"
                         endDate="May 2017"
                         gpa="3.8"
+                        link="https://www.alleganaesa.org/o/techcenter"
                     />
                 </div>
             </div>

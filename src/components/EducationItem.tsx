@@ -1,6 +1,7 @@
 interface EducationItemProps {
     name: string;
     institution: string;
+    link: string;
     startDate: string;
     endDate: string;
     gpa?: string;
@@ -17,7 +18,9 @@ export default function EducationItem(props: EducationItemProps) {
                     {props.name}
                 </div>
                 <div className="text-lg text-center md:text-start pb-2  px-2">
-                    {props.institution}
+                    <a href={props.link} className="hover:underline">
+                        {props.institution}
+                    </a>
                 </div>
                 <div className="text-md text-center md:text-start px-2">
                     {props.gpa ? `GPA: ${props.gpa}` : ''}
