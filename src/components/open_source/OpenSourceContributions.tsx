@@ -1,14 +1,13 @@
 import OpenSourceContribution from "./OpenSourceContribution.tsx";
+import SectionTitle from "../common/SectionTitle.tsx";
 
 export default function OpenSourceContributions() {
     return (
         <>
             <div className="flex flex-col pb-4">
-                <div>
-                    <div className="text-3xl md:text-5xl px-2 md:px-0 py-1 md:py-4" id="opensource">
-                        Open Source Contributions
-                    </div>
-                </div>
+
+                <SectionTitle title="Open Source" id="opensource"/>
+
                 <div className="flex flex-col gap-8 pt-2">
                     <OpenSourceContribution
                         name="vala-lang / vala-docs"
