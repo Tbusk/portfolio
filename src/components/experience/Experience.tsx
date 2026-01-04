@@ -1,14 +1,14 @@
 import ExperienceItem from "./ExperienceItem.tsx";
+import SectionTitle from "../common/SectionTitle.tsx";
 
 export default function Experience() {
     return (
         <>
-            <div className="flex flex-col px-2 pb-8">
-                <div className="text-3xl md:text-5xl py-1 md:py-4" id="experience">
-                    Experience
-                </div>
+            <div className="flex flex-col pb-8">
 
-                <div className="flex flex-col gap-8 pt-2">
+                <SectionTitle title="Experience" id="experience"/>
+
+                <div className="flex flex-col gap-8 pt-2 px-2">
                     <ExperienceItem
                         company="Telic AI"
                         jobTitle="Software Engineer"

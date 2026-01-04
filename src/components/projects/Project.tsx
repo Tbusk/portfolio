@@ -1,3 +1,5 @@
+import Pills from "../common/pills/Pills.tsx";
+
 interface ProjectProps {
     name: string;
     description: string;
@@ -23,14 +25,8 @@ export default function Project(props: ProjectProps) {
                             Metrics
                         </div>
 
-                        <div className="py-2 pb-6">
-                            <ul className="flex flex-row flex-wrap gap-2 px-2">
-                                {props.metrics.map((metric, index) => (
-                                    <li className="border py-0.5 px-4 rounded-2xl text-sm" key={index}>
-                                        {metric}
-                                    </li>
-                                ))}
-                            </ul>
+                        <div className="py-2">
+                            <Pills items={props.metrics} />
                         </div>
                     </>
                 )}
@@ -41,17 +37,13 @@ export default function Project(props: ProjectProps) {
                             Tech Stack
                         </div>
 
-                        <div className="py-2 pb-2">
-                            <ul className="flex flex-row flex-wrap gap-2 px-2">
-                                {props.techStack.map((tech, index) => (
-                                    <li className="border py-0.5 px-4 rounded-2xl text-sm text-center" key={index}>
-                                        {tech}
-                                    </li>
-                                ))}
-                            </ul>
+                        <div className="py-2">
+                            <Pills items={props.techStack} />
                         </div>
                     </>
                 )}
+
+
 
                 {props.link ?
                     <div className="px-2 pt-2 flex">

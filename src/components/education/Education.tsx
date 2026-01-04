@@ -1,30 +1,45 @@
 import EducationItem from "./EducationItem.tsx";
+import SectionTitle from "../common/SectionTitle.tsx";
 
 export default function Education() {
     return (
         <>
             <div className="flex flex-col pb-8">
-                <div className="text-3xl md:text-5xl py-1 md:py-4 px-2 md:px-0" id="education">
-                    Education
-                </div>
+
+                <SectionTitle title="Education" id="education"/>
 
                 <div className="flex flex-col gap-8 pt-2">
                     <EducationItem
-                        name="BSc. - Digital Media Software Engineering"
+                        name="BSc. Digital Media Software Engineering"
                         institution="Ferris State University"
-                        startDate="2022"
+                        startDate="May 2022"
                         endDate="May 2026"
                         gpa="4.0"
                         link="https://ferris.edu"
-                    />
-
-                    <EducationItem
-                        name="AA - General Studies"
-                        institution="Kalamazoo Valley Community College"
-                        startDate="Sept 2016"
-                        endDate="May 2021"
-                        gpa="3.5"
-                        link="https://kvcc.edu"
+                        coursework={[
+                            "Project Management Fundamentals",
+                            "Computer Programming 1",
+                            "Computer Programming 2",
+                            "SENG Methodologies - Processes",
+                            "Software Requirements Management",
+                            "Intro to Database Design",
+                            "Software Configuration Management",
+                            "Software Data Structures",
+                            "Software Component Design",
+                            "Engineering Enterprise Software Applications",
+                            "Programming Languages",
+                            "Introduction to Machine Learning",
+                            "Programming Graphical Interfaces",
+                            "Software Quality Assurance",
+                            "Software Engineering Tools",
+                            "Software Design - Architecture",
+                            "Applied Machine Learning Software",
+                            "SENG Applied Internship",
+                            "Software Development Industry Certification",
+                            "Capstone in Software Engineering",
+                            "Intelligence and Data Warehousing",
+                            "Intro to Cloud Application Development"
+                        ]}
                     />
 
                     <EducationItem

@@ -29,8 +29,8 @@ export default function ExperienceItem(props: ExperienceItemProps) {
                 </div>
 
                 <ul className="list-disc pl-4">
-                    {props.description.map((content) => (
-                        <li className="pl-2 py-1.5">
+                    {props.description.map((content, index) => (
+                        <li className="pl-2 py-1.5" key={index}>
                             {content}
                         </li>
                     ))}
