@@ -1,26 +1,89 @@
-import Homepage from "./components/homepage/Homepage.tsx";
-import Education from "./components/education/Education.tsx";
-import Projects from "./components/projects/Projects.tsx";
-import Contact from "./components/contact/Contact.tsx";
-import Footer from "./components/footer/Footer.tsx";
-import Experience from "./components/experience/Experience.tsx";
-import OpenSourceContributions from "./components/open_source/OpenSourceContributions.tsx";
-import Header from "./components/header/Header.tsx";
-import Skills from "./components/skills/Skills.tsx";
+import { ErrorBoundary, lazy, LocationProvider, Route, Router } from "preact-iso";
+import GeneralComponent from "./components/GeneralComponent.tsx";
 
-export function App() {
+
+export default function App() {
+
+    const Homepage = lazy(() =>
+        import("./components/homepage/Homepage.tsx")
+    );
+    const Experience = lazy(() =>
+        import("./components/experience/Experience.tsx")
+    );
+    const Skills = lazy(() =>
+        import("./components/skills/Skills.tsx")
+    );
+    const Education = lazy(() =>
+        import("./components/education/Education.tsx")
+    );
+    const Projects = lazy(() =>
+        import("./components/projects/Projects.tsx")
+    );
+    const OpenSourceContributions = lazy(() =>
+        import("./components/open_source/OpenSourceContributions.tsx")
+    );
+    const Contact = lazy(() =>
+        import("./components/contact/Contact.tsx")
+    );
 
     return (
-        <div className="container mx-auto">
-            <Header />
-            <Homepage />
-            <Experience />
-            <Skills />
-            <Education />
-            <Projects />
-            <OpenSourceContributions />
-            <Contact />
-            <Footer />
-        </div>
+        <>
+            <LocationProvider>
+                <ErrorBoundary>
+                    <Router>
+                        <Route path="/"
+                               component={() => (
+                                   <GeneralComponent hasHeading={false}>
+                                       <Homepage/>
+                                   </GeneralComponent>
+                               )}
+                        />
+                        <Route path="/experience"
+                               component={() => (
+                                   <GeneralComponent hasHeading={true}>
+                                       <Experience/>
+                                   </GeneralComponent>
+                               )}
+                        />
+                        <Route path="/skills"
+                               component={() => (
+                                   <GeneralComponent hasHeading={true}>
+                                       <Skills/>
+                                   </GeneralComponent>
+                               )}
+                        />
+                        <Route path="/education"
+                               component={() => (
+                                   <GeneralComponent hasHeading={true}>
+                                       <Education/>
+                                   </GeneralComponent>
+                               )}
+                        />
+                        <Route path="/projects"
+                               component={() => (
+                                   <GeneralComponent hasHeading={true}>
+                                       <Projects/>
+                                   </GeneralComponent>
+                               )}
+                        />
+                        <Route path="/open-source"
+                               component={() => (
+                                   <GeneralComponent hasHeading={true}>
+                                       <OpenSourceContributions/>
+                                   </GeneralComponent>
+                               )}
+                        />
+                        <Route path="/contact"
+                               component={() => (
+                                   <GeneralComponent hasHeading={true}>
+                                       <Contact/>
+                                   </GeneralComponent>
+                               )}
+                        />
+                    </Router>
+                </ErrorBoundary>
+            </LocationProvider>
+
+        </>
     )
 }
