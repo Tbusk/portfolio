@@ -4,7 +4,7 @@ import SectionTitle from "../common/SectionTitle.tsx";
 export default function Education() {
     return (
         <>
-            <div className="flex flex-col pb-8">
+            <div className="flex flex-col"  style={{minHeight: '85vh'}}>
 
                 <SectionTitle title="Education" id="education"/>
 
