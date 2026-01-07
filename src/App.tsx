@@ -1,5 +1,6 @@
 import { ErrorBoundary, lazy, LocationProvider, Route, Router } from "preact-iso";
 import GeneralComponent from "./components/common/GeneralComponent.tsx";
+import NotFound from "./components/NotFound.tsx";
 
 
 export default function App() {
@@ -80,6 +81,7 @@ export default function App() {
                                    </GeneralComponent>
                                )}
                         />
+                        <Route default component={NotFound} />
                     </Router>
                 </ErrorBoundary>
             </LocationProvider>
