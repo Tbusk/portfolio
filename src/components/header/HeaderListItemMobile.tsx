@@ -3,7 +3,7 @@ import type { SetStateAction } from "preact/compat";
 
 interface HeaderListItemMobileProps {
     name: string;
-    id: string;
+    id?: string;
     isOpen: boolean;
     setIsOpen: Dispatch<SetStateAction<boolean>>;
     index: number;
@@ -12,7 +12,7 @@ interface HeaderListItemMobileProps {
 export default function HeaderListItemMobile(props: HeaderListItemMobileProps) {
     return (
         <li className="hover:underline hover:scale-110 text-xl py-3 text-center" key={props.index}>
-            <a href={`#${props.id}`} onClick={() => props.setIsOpen(!props.isOpen)}>
+            <a href={`/${props.id ? props.id : ''}`} onClick={() => props.setIsOpen(!props.isOpen)}>
                 {props.name}
             </a>
         </li>
