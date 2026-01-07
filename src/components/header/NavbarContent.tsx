@@ -3,7 +3,7 @@ import HeaderListItem from "./HeaderListItem.tsx";
 export default function NavbarContent() {
     return (
         <>
-            <ul className="gap-8 justify-center hidden md:flex py-8">
+            <ul className="gap-8 justify-center hidden md:flex">
                 <HeaderListItem name="Home" index={0}/>
                 <HeaderListItem name="Experience" id="experience" index={1} />
                 <HeaderListItem name="Skills" id="skills" index={2} />
