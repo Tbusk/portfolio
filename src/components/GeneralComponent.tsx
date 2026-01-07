@@ -9,14 +9,15 @@ interface GeneralComponentProps {
 
 export default function GeneralComponent(props: GeneralComponentProps) {
     return (
-        <div className="container mx-auto">
+        <div>
             <Header />
+            <div className="container mx-auto">
+                <div className={props.hasHeading ? "pt-0 md:pt-24" : ""}>
+                    {props.children}
+                </div>
 
-            <div className={props.hasHeading ? "pt-0 md:pt-24" : ""}>
-                {props.children}
+                <Footer />
             </div>
-
-            <Footer />
         </div>
     );
 }
