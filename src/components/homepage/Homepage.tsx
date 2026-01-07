@@ -3,7 +3,7 @@ import Socials from "./Socials.tsx";
 export default function Homepage() {
     return (
         <>
-            <div className="flex flex-col justify-center items-center" style={{minHeight: '92.6vh'}}>
+            <div className="flex flex-col justify-center items-center">
                 <div className="text-3xl md:text-6xl text-center md:text-start py-1 md:py-4">
                     Hiya
                 </div>
