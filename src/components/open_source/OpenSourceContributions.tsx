@@ -4,7 +4,7 @@ import SectionTitle from "../common/SectionTitle.tsx";
 export default function OpenSourceContributions() {
     return (
         <>
-            <div className="flex flex-col" style={{minHeight: '85vh'}}>
+            <div className="flex flex-col">
 
                 <SectionTitle title="Open Source" id="opensource"/>
 

@@ -5,7 +5,7 @@ import SectionTitle from "../common/SectionTitle.tsx";
 export default function Skills() {
     return (
         <>
-            <div style={{minHeight: '85vh'}}>
+            <div className="">
 
                 <SectionTitle title="Skills" id="skills"/>
 

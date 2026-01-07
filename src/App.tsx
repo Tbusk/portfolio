@@ -1,5 +1,5 @@
 import { ErrorBoundary, lazy, LocationProvider, Route, Router } from "preact-iso";
-import GeneralComponent from "./components/GeneralComponent.tsx";
+import GeneralComponent from "./components/common/GeneralComponent.tsx";
 
 
 export default function App() {
