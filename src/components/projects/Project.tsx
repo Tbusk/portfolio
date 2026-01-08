@@ -12,16 +12,16 @@ export default function Project(props: ProjectProps) {
     return (
         <>
             <div>
-                <div className="text-2xl font-bold pb-2 px-2 ">
+                <div className="text-2xl font-bold pb-2 text-[#5294e2]">
                     {props.name}
                 </div>
-                <div className="px-2 pb-4">
+                <div className="pb-4">
                     {props.description}
                 </div>
 
                 {props.metrics && props.metrics.length > 0 && (
                     <>
-                        <div className="font-bold px-2">
+                        <div className="font-bold">
                             Metrics
                         </div>
 
@@ -33,7 +33,7 @@ export default function Project(props: ProjectProps) {
 
                 {props.techStack && props.techStack.length > 0 && (
                     <>
-                        <div className="font-bold px-2">
+                        <div className="font-bold">
                             Tech Stack
                         </div>
 
@@ -46,9 +46,9 @@ export default function Project(props: ProjectProps) {
 
 
                 {props.link ?
-                    <div className="px-2 pt-2 flex">
-                        <div className="border rounded-2xl py-1 px-4 hover:scale-110 hover:underline active:scale-95">
-                            <a href={props.link}>
+                    <div className="pt-4 flex">
+                        <div className="rounded-xl py-2 px-10 hover:bg-gray-200 bg-gray-100 border border-gray-400">
+                            <a href={props.link} className="text-md font-bold text-gray-600">
                                 View Project
                             </a>
                         </div>

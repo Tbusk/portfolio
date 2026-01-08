@@ -1,5 +1,6 @@
 import Project from "./Project.tsx";
 import SectionTitle from "../common/SectionTitle.tsx";
+import HrItem from "../common/HrItem.tsx";
 
 export default function Projects() {
     return (
@@ -8,7 +9,7 @@ export default function Projects() {
 
                 <SectionTitle title="Projects" id="projects"/>
 
-                <div className="flex flex-col gap-8 pt-2">
+                <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
                     <Project
                         name="Vala Language Plugin for JetBrains IDEs"
                         description={
@@ -33,6 +34,8 @@ export default function Projects() {
                         link="https://github.com/Tbusk/vala-jetbrains-plugin"
                     />
 
+                    <HrItem />
+
                     <Project
                         name="Warehouse Item Classification"
                         description={
@@ -53,6 +56,8 @@ export default function Projects() {
                         ]}
                     />
 
+                    <HrItem />
+
                     <Project
                         name="Portfolio"
                         description={
@@ -72,6 +77,8 @@ export default function Projects() {
                         ]}
                         link="https://github.com/Tbusk/portfolio"
                     />
+
+                    <HrItem />
 
                     <Project
                         name="Customer Support Chatbot"
@@ -97,6 +104,8 @@ export default function Projects() {
                         link="https://github.com/Tbusk/Customer-Support-Chatbot/"
                     />
 
+                    <HrItem />
+
                     <Project
                         name="O/1 Stock Knapsack"
                         description={
@@ -115,6 +124,8 @@ export default function Projects() {
                         ]}
                         link="https://github.com/Tbusk/Stock-Knapsack-Project/"
                     />
+
+                    <HrItem />
                 </div>
             </div>
         </>
