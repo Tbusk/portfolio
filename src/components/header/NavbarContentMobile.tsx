@@ -18,7 +18,7 @@ export default function NavbarContentMobile() {
 
                 {isMenuOpen && (
                     <div className="h-screen w-screen bg-white">
-                        <div className="text-2xl text-center font-bold pb-3 py-4">
+                        <div className="text-2xl px-4 font-bold pb-3 py-4">
                             Pages
                         </div>
                         <ul className="flex-row justify-center">
