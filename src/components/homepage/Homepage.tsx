@@ -13,7 +13,7 @@ export default function Homepage() {
                 </div>
 
                 <div className="text-2xl text-center md:text-start md:text-4xl py-4 md:py-6">
-                    Full-Stack Software Engineer
+                    A Full-Stack Software Engineer
                 </div>
 
                 <Socials />
