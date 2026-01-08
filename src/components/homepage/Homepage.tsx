@@ -8,7 +8,7 @@ export default function Homepage() {
                     Hiya
                 </div>
 
-                <div className="text-4xl md:text-8xl text-center md:text-start py-2 md:py-4 font-bold">
+                <div className="text-4xl md:text-8xl text-center md:text-start py-2 md:py-4 font-bold border-b-4 border-[#5294e2]">
                     I'm Trevor Busk
                 </div>
 

@@ -1,5 +1,6 @@
 import EducationItem from "./EducationItem.tsx";
 import SectionTitle from "../common/SectionTitle.tsx";
+import HrItem from "../common/HrItem.tsx";
 
 export default function Education() {
     return (
@@ -8,7 +9,7 @@ export default function Education() {
 
                 <SectionTitle title="Education" id="education"/>
 
-                <div className="flex flex-col gap-8 pt-2">
+                <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
                     <EducationItem
                         name="BSc. Digital Media Software Engineering"
                         institution="Ferris State University"
@@ -41,6 +42,8 @@ export default function Education() {
                             "Intro to Cloud Application Development"
                         ]}
                     />
+
+                    <HrItem />
 
                     <EducationItem
                         name="Vocational - Computer Information Systems"

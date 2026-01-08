@@ -8,7 +8,7 @@ interface SkillItemsProps {
 export default function SkillItems(props: SkillItemsProps) {
     return (
         <div className="py-4">
-            <div className="text-xl px-2 font-bold pb-4">
+            <div className="text-xl font-bold pb-4">
                 {props.title}
             </div>
 

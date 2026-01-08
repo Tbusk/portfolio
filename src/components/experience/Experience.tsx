@@ -1,5 +1,6 @@
 import ExperienceItem from "./ExperienceItem.tsx";
 import SectionTitle from "../common/SectionTitle.tsx";
+import HrItem from "../common/HrItem.tsx";
 
 export default function Experience() {
     return (
@@ -8,7 +9,7 @@ export default function Experience() {
 
                 <SectionTitle title="Experience" id="experience"/>
 
-                <div className="flex flex-col gap-8 pt-2 px-2">
+                <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
                     <ExperienceItem
                         company="Telic AI"
                         jobTitle="Software Engineer"
@@ -24,6 +25,9 @@ export default function Experience() {
                             model integration and automation.`
                         ]}
                     />
+
+                    <HrItem />
+
                     <ExperienceItem
                         company="AD Solutions"
                         jobTitle="Software Engineer"
@@ -56,6 +60,9 @@ export default function Experience() {
                         ]}
                         website="https://myadsusa.com"
                     />
+
+                    <HrItem />
+
                     <ExperienceItem
                         company="Kendall College of Art and Design"
                         jobTitle="Software Engineer Intern"
@@ -75,6 +82,9 @@ export default function Experience() {
                         ]}
                         website="https://www.ferris.edu/art-design/"
                     />
+
+                    <HrItem />
+
                 </div>
             </div>
         </>

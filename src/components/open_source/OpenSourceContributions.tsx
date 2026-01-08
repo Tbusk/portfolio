@@ -1,5 +1,6 @@
 import OpenSourceContribution from "./OpenSourceContribution.tsx";
 import SectionTitle from "../common/SectionTitle.tsx";
+import HrItem from "../common/HrItem.tsx";
 
 export default function OpenSourceContributions() {
     return (
@@ -8,7 +9,7 @@ export default function OpenSourceContributions() {
 
                 <SectionTitle title="Open Source" id="opensource"/>
 
-                <div className="flex flex-col gap-8 pt-2">
+                <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
                     <OpenSourceContribution
                         name="vala-lang / vala-docs"
                         link="https://github.com/vala-lang/vala-docs"
@@ -24,6 +25,8 @@ export default function OpenSourceContributions() {
                             `Various miscellaneous fixes and improvements`
                         ]}
                     />
+
+                    <HrItem />
 
                     <OpenSourceContribution
                         name="elementary / monitor"
@@ -41,6 +44,8 @@ export default function OpenSourceContributions() {
                         ]}
                     />
 
+                    <HrItem />
+
                     <OpenSourceContribution
                         name="elementary / settings-power"
                         link="https://github.com/elementary/settings-power"
@@ -51,6 +56,8 @@ export default function OpenSourceContributions() {
                             `Patched switch sizing issue being enlarged by dependency update`,
                         ]}
                     />
+
+                    <HrItem />
 
                     <OpenSourceContribution
                         name="elementary / appcenter-dashboard"
@@ -63,6 +70,8 @@ export default function OpenSourceContributions() {
                         ]}
                     />
 
+                    <HrItem />
+
                     <OpenSourceContribution
                         name="elementary / screenshot"
                         link="https://github.com/elementary/screenshot"
@@ -73,6 +82,8 @@ export default function OpenSourceContributions() {
                             `Patched segfault issue where app crashed when screenshot height is 1/4x or more greater than the width`,
                         ]}
                     />
+
+                    <HrItem />
 
                     <OpenSourceContribution
                         name="greenmail-mail-test / greenmail"
@@ -87,6 +98,9 @@ export default function OpenSourceContributions() {
                             `,
                         ]}
                     />
+
+                    <HrItem />
+
                 </div>
             </div>
         </>

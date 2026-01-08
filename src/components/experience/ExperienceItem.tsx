@@ -16,13 +16,13 @@ export default function ExperienceItem(props: ExperienceItemProps) {
                     {props.startDate} - {props.endDate}
                 </div>
 
-                <div className="text-2xl font-bold pb-2">
+                <div className="text-2xl font-bold pb-2 text-[#5294e2]">
                     {props.jobTitle}
                 </div>
 
                 <div className="text-lg pb-2">
                     {props.website ? (
-                        <a className="hover:underline" href={props.website}>
+                        <a className="underline" href={props.website}>
                             {props.company}
                         </a>
                     ) : `${props.company}`}
