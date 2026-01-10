@@ -19,7 +19,7 @@ export default function Projects() {
                             `
                         }
                         metrics={[
-                            `9.5k Downloads`
+                            `10k Downloads`
                         ]}
                         techStack={[
                             `Java`,
@@ -62,7 +62,7 @@ export default function Projects() {
                         name="Portfolio"
                         description={
                             `
-                            Created this portfolio website showcasing my projects, experience, skills, and more.
+                            Created this open-source portfolio website showcasing my projects, experience, skills, and more.
                             `
                         }
                         metrics={[
@@ -81,10 +81,25 @@ export default function Projects() {
                     <HrItem />
 
                     <Project
+                        name="LaTeX Resume Template"
+                        description={
+                            `
+                            Created an open-source modular LaTeX resume template which I use for my resume. 
+                            `
+                        }
+                        metrics={[
+                        ]}
+                        techStack={[
+                            `LaTeX`,
+                        ]}
+                        link="https://github.com/Tbusk/resume"
+                    />
+
+                    <Project
                         name="Customer Support Chatbot"
                         description={
                             `
-                            Created a ChatGPT-powered customer support chatbot widget for websites.
+                            Created an open-source ChatGPT-powered customer support chatbot widget for websites.
                             `
                         }
                         metrics={[
