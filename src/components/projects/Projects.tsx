@@ -14,9 +14,15 @@ export default function Projects() {
                         name="Vala Language Plugin for JetBrains IDEs"
                         description={
                             `
-                            Authored and published an open-source language plugin for the Vala programming language. 
+                            Authored and published a language plugin for the Vala programming language. 
                             `
                         }
+                        tags={[
+                            `Open Source`,
+                            `Plugin`,
+                            `DevTool`,
+                            `Live`
+                        ]}
                         metrics={[
                             `10k Downloads`
                         ]}
@@ -42,6 +48,11 @@ export default function Projects() {
                             Engineered a machine learning computer vision system to reduce military disposition waste.
                             `
                         }
+                        tags={[
+                            `Machine Learning`,
+                            `Computer Vision`,
+                            `Image Classification`,
+                        ]}
                         metrics={[
                             `Top-1 Accuracy: 89%`,
                             `Top-5 Accuracy: 96%`,
@@ -64,10 +75,13 @@ export default function Projects() {
                         name="Portfolio"
                         description={
                             `
-                            Created this open-source portfolio website showcasing my projects, experience, skills, and more.
+                            Created this portfolio website showcasing my projects, experience, skills, and more.
                             `
                         }
-                        metrics={[
+                        tags={[
+                            `Open Source`,
+                            `Website`,
+                            `Live`
                         ]}
                         techStack={[
                             `HTML`,
@@ -86,10 +100,12 @@ export default function Projects() {
                         name="LaTeX Resume Template"
                         description={
                             `
-                            Created an open-source modular LaTeX resume template which I use for my resume. 
+                            Created a modular LaTeX resume template which I use for my resume. 
                             `
                         }
-                        metrics={[
+                        tags={[
+                            `Open Source`,
+                            `Template`,
                         ]}
                         techStack={[
                             `LaTeX`,
@@ -101,10 +117,15 @@ export default function Projects() {
                         name="Customer Support Chatbot"
                         description={
                             `
-                            Created an open-source ChatGPT-powered customer support chatbot widget for websites.
+                            Created a ChatGPT-powered customer support chatbot widget for websites.
                             `
                         }
-                        metrics={[
+                        tags={[
+                            `Open Source`,
+                            `Widget`,
+                            `Frontend`,
+                            `Backend`,
+                            `Monorepo`
                         ]}
                         techStack={[
                             `Java`,
@@ -131,7 +152,9 @@ export default function Projects() {
                             algorithms.
                             `
                         }
-                        metrics={[
+                        tags={[
+                            `Open Source`,
+                            `DSA`,
                         ]}
                         techStack={[
                             `Java`,
