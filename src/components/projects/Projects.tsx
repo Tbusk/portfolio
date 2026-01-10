@@ -14,8 +14,7 @@ export default function Projects() {
                         name="Vala Language Plugin for JetBrains IDEs"
                         description={
                             `
-                            Authored and published an open-source full-featured language plugin for the Vala programming 
-                            language. 
+                            Authored and published an open-source language plugin for the Vala programming language. 
                             `
                         }
                         metrics={[
