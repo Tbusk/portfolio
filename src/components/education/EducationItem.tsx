@@ -1,5 +1,3 @@
-import Pills from "../common/pills/Pills.tsx";
-
 interface EducationItemProps {
     name: string;
     institution: string;
@@ -7,7 +5,6 @@ interface EducationItemProps {
     startDate: string;
     endDate: string;
     gpa?: string;
-    coursework?: string[];
 }
 
 export default function EducationItem(props: EducationItemProps) {
@@ -22,21 +19,11 @@ export default function EducationItem(props: EducationItemProps) {
                     {props.name}
                 </div>
 
-                <div className="text-lg pb-2">
+                <div className="text-lg">
                     <a href={props.link} className="hover:underline">
                         {props.gpa ? `${props.institution}, GPA: ${props.gpa}` : props.institution}
                     </a>
                 </div>
-
-                {props.coursework && props.coursework.length > 0 && (
-                    <>
-                        <div className="font-bold text-gray-600 py-2 pb-4">
-                            Relevant Coursework
-                        </div>
-
-                        <Pills items={props.coursework} />
-                    </>
-                )}
             </div>
         </>
     );

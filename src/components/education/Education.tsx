@@ -17,30 +17,6 @@ export default function Education() {
                         endDate="May 2026"
                         gpa="4.0"
                         link="https://ferris.edu"
-                        coursework={[
-                            "Project Management Fundamentals",
-                            "Computer Programming 1",
-                            "Computer Programming 2",
-                            "SENG Methodologies - Processes",
-                            "Software Requirements Management",
-                            "Intro to Database Design",
-                            "Software Configuration Management",
-                            "Software Data Structures",
-                            "Software Component Design",
-                            "Engineering Enterprise Software Applications",
-                            "Programming Languages",
-                            "Introduction to Machine Learning",
-                            "Programming Graphical Interfaces",
-                            "Software Quality Assurance",
-                            "Software Engineering Tools",
-                            "Software Design - Architecture",
-                            "Applied Machine Learning Software",
-                            "SENG Applied Internship",
-                            "Software Development Industry Certification",
-                            "Capstone in Software Engineering",
-                            "Intelligence and Data Warehousing",
-                            "Intro to Cloud Application Development"
-                        ]}
                     />
 
                     <HrItem />
