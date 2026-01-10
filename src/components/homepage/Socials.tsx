@@ -1,5 +1,6 @@
 import githubIcon from '../../assets/github_icon.svg';
 import linkedinIcon from '../../assets/linkedin_icon.svg';
+import documentIcon from '../../assets/document_icon.svg';
 import Social from "./Social.tsx";
 
 export default function Socials() {
@@ -19,6 +20,14 @@ export default function Socials() {
                     link="https://www.linkedin.com/in/trevor-busk/"
                     logo={linkedinIcon}
                     logoAlt="LinkedIn Icon"
+                    imageHeight={36}
+                    imageWidth={36}
+                />
+                <Social
+                    name="Resume"
+                    link="https://github.com/Tbusk/resume/blob/main/Resume.pdf"
+                    logo={documentIcon}
+                    logoAlt="Resume Download"
                     imageHeight={42}
                     imageWidth={42}
                 />
