@@ -8,8 +8,8 @@ export default function NavbarContentMobile() {
 
     return (
         <>
-            <div className="md:hidden flex fixed w-full h-full justify-end">
-                <div className="fixed pr-4 pt-2">
+            <div className="md:hidden flex justify-end">
+                <div className="fixed top-4 right-4 z-50">
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-white p-2 rounded-full border-2 border-gray-100">
                         <img src={hamburgerIcon} alt="Hamburger Icon" height={28}
                              width={28}/>
