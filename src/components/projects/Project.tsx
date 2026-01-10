@@ -1,4 +1,5 @@
 import Pills from "../common/pills/Pills.tsx";
+import Media from "../media/Media.tsx";
 
 interface ProjectProps {
     name: string;
@@ -7,6 +8,7 @@ interface ProjectProps {
     metrics?: string[];
     techStack: string[];
     tags?: string[];
+    media?: string[];
 }
 
 export default function Project(props: ProjectProps) {
@@ -52,6 +54,18 @@ export default function Project(props: ProjectProps) {
 
                         <div className="py-3">
                             <Pills items={props.techStack} />
+                        </div>
+                    </>
+                )}
+
+                {props.media && props.media.length > 0 && (
+                    <>
+                        <div className="font-bold text-gray-600">
+                            Media
+                        </div>
+
+                        <div className="py-3">
+                            <Media items={props.media} />
                         </div>
                     </>
                 )}
