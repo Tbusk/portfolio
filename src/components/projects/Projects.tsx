@@ -40,12 +40,15 @@ export default function Projects() {
                         name="Warehouse Item Classification"
                         description={
                             `
-                            Engineered a computer vision system to reduce military disposition waste, achieving 89% 
-                            top-1 and 96% top-5 accuracy in classifying 29,500 unique items across a dataset of 
-                            228,000 images, surpassing the top open-source model by 12%.
+                            Engineered a machine learning computer vision system to reduce military disposition waste.
                             `
                         }
                         metrics={[
+                            `Top-1 Accuracy: 89%`,
+                            `Top-5 Accuracy: 96%`,
+                            `228,000 images`,
+                            `29,500 items`,
+                            `+12% over top OS models`
                         ]}
                         techStack={[
                             `Python`,
