@@ -21,7 +21,7 @@ export default function Project(props: ProjectProps) {
 
                 {props.metrics && props.metrics.length > 0 && (
                     <>
-                        <div className="font-bold">
+                        <div className="font-bold text-gray-600">
                             Metrics
                         </div>
 
@@ -33,7 +33,7 @@ export default function Project(props: ProjectProps) {
 
                 {props.techStack && props.techStack.length > 0 && (
                     <>
-                        <div className="font-bold">
+                        <div className="font-bold text-gray-600">
                             Tech Stack
                         </div>
 

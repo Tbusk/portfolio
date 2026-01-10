@@ -30,7 +30,7 @@ export default function EducationItem(props: EducationItemProps) {
 
                 {props.coursework && props.coursework.length > 0 && (
                     <>
-                        <div className="font-bold py-2 pb-4">
+                        <div className="font-bold text-gray-600 py-2 pb-4">
                             Relevant Coursework
                         </div>
 
