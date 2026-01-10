@@ -4,20 +4,33 @@ interface ProjectProps {
     name: string;
     description: string;
     link?: string;
-    metrics: string[];
+    metrics?: string[];
     techStack: string[];
+    tags?: string[];
 }
 
 export default function Project(props: ProjectProps) {
     return (
         <>
             <div>
-                <div className="text-2xl font-bold pb-2 text-[#5294e2]">
+                <div className="text-2xl font-bold pb-3 text-[#5294e2]">
                     {props.name}
                 </div>
-                <div className="pb-4">
+                <div className="pb-3">
                     {props.description}
                 </div>
+
+                {props.tags && props.tags.length > 0 && (
+                    <>
+                        <div className="font-bold text-gray-600">
+                            Tags
+                        </div>
+
+                        <div className="py-3">
+                            <Pills items={props.tags} />
+                        </div>
+                    </>
+                )}
 
                 {props.metrics && props.metrics.length > 0 && (
                     <>
@@ -25,7 +38,7 @@ export default function Project(props: ProjectProps) {
                             Metrics
                         </div>
 
-                        <div className="py-2">
+                        <div className="py-3">
                             <Pills items={props.metrics} />
                         </div>
                     </>
@@ -37,7 +50,7 @@ export default function Project(props: ProjectProps) {
                             Tech Stack
                         </div>
 
-                        <div className="py-2">
+                        <div className="py-3">
                             <Pills items={props.techStack} />
                         </div>
                     </>
