@@ -9,13 +9,16 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
     return (
         <>
             <div>
-                <div className="text-2xl pb-2 font-bold text-[#5294e2]">
+                <div className="text-2xl pb-3 font-bold text-[#5294e2]">
                     {props.name}
                 </div>
-                <div className="pb-2">
+                <div className="pb-3">
                     {props.description}
                 </div>
                 <div>
+                    <div className="font-bold text-gray-600 pb-1">
+                        Contributions
+                    </div>
                     <ul className="list-disc pl-6">
                         {props.content.map((content, index) => (
                             <li className="pl-2 py-1.5" key={index}>
