@@ -1,6 +1,11 @@
 import Project from "./Project.tsx";
 import SectionTitle from "../common/SectionTitle.tsx";
 import HrItem from "../common/HrItem.tsx";
+import valaPluginScreenshot from "./media/vala_ide_plugin.png";
+import portfolioScreenshot from "./media/portfolio.png";
+import resumeTemplateScreenshot from "./media/resume_template.png";
+import chatbotOpenDesktopScreenshot from "./media/chatbot_open_desktop.png";
+import chatbotClosedDesktopScreenshot from "./media/chatbot_closed_desktop.png";
 
 export default function Projects() {
     return (
@@ -36,6 +41,9 @@ export default function Projects() {
                             `Lex`,
                             `BNF`
                         ]}
+                        media={[
+                            valaPluginScreenshot
+                        ]}
                         link="https://github.com/Tbusk/vala-jetbrains-plugin"
                     />
 
@@ -52,12 +60,14 @@ export default function Projects() {
                             `Machine Learning`,
                             `Computer Vision`,
                             `Image Classification`,
+                            `Collaborative`
                         ]}
                         metrics={[
                             `Top-1 Accuracy: 89%`,
                             `Top-5 Accuracy: 96%`,
                             `228,000 images`,
                             `29,500 items`,
+                            `2,450 categories`,
                             `+12% over top OS models`
                         ]}
                         techStack={[
@@ -91,6 +101,9 @@ export default function Projects() {
                             `Vite`,
                             `Tailwind CSS`,
                         ]}
+                        media={[
+                            portfolioScreenshot
+                        ]}
                         link="https://github.com/Tbusk/portfolio"
                     />
 
@@ -109,6 +122,9 @@ export default function Projects() {
                         ]}
                         techStack={[
                             `LaTeX`,
+                        ]}
+                        media={[
+                            resumeTemplateScreenshot
                         ]}
                         link="https://github.com/Tbusk/resume"
                     />
@@ -139,6 +155,10 @@ export default function Projects() {
                             `Maven`,
                             `JUnit`
                         ]}
+                        media={[
+                            chatbotClosedDesktopScreenshot,
+                            chatbotOpenDesktopScreenshot
+                        ]}
                         link="https://github.com/Tbusk/Customer-Support-Chatbot/"
                     />
 
@@ -155,6 +175,7 @@ export default function Projects() {
                         tags={[
                             `Open Source`,
                             `DSA`,
+                            `Collaborative`
                         ]}
                         techStack={[
                             `Java`,
