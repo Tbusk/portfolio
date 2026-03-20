@@ -10,23 +10,40 @@ export default function Experience() {
                 <SectionTitle title="Experience" id="experience"/>
 
                 <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
+
                     <ExperienceItem
-                        company="Telic AI"
-                        jobTitle="Software Engineer"
-                        startDate="Oct 2025"
+                        company="Ferris State University"
+                        jobTitle="Research Assistant"
+                        startDate="January 2026"
                         endDate="Present"
                         description={[
-                            `Researched and experimented with dozens of ML models to identify the most effective models 
-                            at image generation and image mixing for an undisclosed use-case.`,
-                            `Experimented with creating multi-language documents from a node-js environment using images 
-                            and text using libraries like pdfkit and puppeteer.`,
-                            `Created an ecommerce web platform using PayloadCMS, PostgresSQL, Docker, and Next.js to 
-                            create products, manage content for the website, and procure personalized products via ML 
-                            model integration and automation.`
+                            `Served as the sole developer for Ferrell, a custom LLM-powered VS Code extension designed to support software development students.`,
+                            `Built the application from scratch, connecting a modern webview frontend (React, TypeScript, Tailwind) to a secure, Dockerized Java Spring Boot backend and PostgreSQL database hosted on AWS.`,
+                            `Presented the architecture and capabilities of the Ferrell project to a diverse audience as a featured speaker at Ferris AI Day.`,
+                            `Implemented automated CI/CD pipelines, strict code-styling, detailed documentation, and gave regular progress demos to university stakeholders.`,
+                            `Researched top educational AI tooling like ChatGPT Study Mode, Flint, SocraticQ, and other innovative AI tools to determine what features to implement in Ferrell.`,
+                            `Experimented with a variety of existing AI tooling for capabilities such as JetBrains AI, Cursor, and Antigravity with models such as Claude 4.5 Sonnet, GPT-5.2 Codex, and Gemini 3 Pro.`
+                        ]}
+                        website="https://ferris.edu"
+                    />
+
+                    <HrItem/>
+
+                    <ExperienceItem
+                        company="Telic Corporation"
+                        jobTitle="Software Engineer"
+                        startDate="October 2025"
+                        endDate="Present"
+                        description={[
+                            `Built a full-stack web application for personalized children's books using Next.js, React, Tailwind CSS, PayloadCMS, and PostgreSQL.`,
+                            `Researched and evaluated dozens of ML models and platforms for image generation, mixing, face-swapping, and feature alteration to power the book personalization engine.`,
+                            `Implemented comprehensive i18n (English and Arabic) for international reach, and customized the PayloadCMS admin dashboard to streamline book creation and content management.`,
+                            `Containerized the application stack using Docker and Docker Compose, ensuring parity and reliability across development and production environments.`,
+                            `Managed product direction and feature prioritization by leading weekly progress demos and strategy syncs with key stakeholders.`
                         ]}
                     />
 
-                    <HrItem />
+                    <HrItem/>
 
                     <ExperienceItem
                         company="AD Solutions"
@@ -61,7 +78,7 @@ export default function Experience() {
                         website="https://myadsusa.com"
                     />
 
-                    <HrItem />
+                    <HrItem/>
 
                     <ExperienceItem
                         company="Kendall College of Art and Design"
@@ -83,7 +100,7 @@ export default function Experience() {
                         website="https://www.ferris.edu/art-design/"
                     />
 
-                    <HrItem />
+                    <HrItem/>
 
                 </div>
             </div>
