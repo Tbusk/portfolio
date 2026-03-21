@@ -8,6 +8,7 @@ interface EducationItemProps {
     endDate: string;
     achievements?: string[];
     gpa?: string;
+    courses?: string[];
 }
 
 export default function EducationItem(props: EducationItemProps) {
@@ -27,6 +28,15 @@ export default function EducationItem(props: EducationItemProps) {
                         {props.institution}
                     </a>
                 </div>
+
+                {props.courses && props.courses.length > 0 && (
+                    <div className="pt-2 pb-3">
+                        <div className="font-bold text-gray-600 pb-3">
+                            Courses
+                        </div>
+                        <Pills items={props.courses} />
+                    </div>
+                )}
 
                 {props.achievements && props.achievements.length > 0 && (
                     <div className="pt-2 pb-3">
