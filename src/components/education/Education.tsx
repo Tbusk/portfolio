@@ -17,6 +17,7 @@ export default function Education() {
                         endDate="May 2026"
                         gpa="4.0"
                         link="https://ferris.edu"
+                        achievements={["Dean's List", "College of Business Excellence Award Winner", "IEEE Member"]}
                     />
 
                     <HrItem />
