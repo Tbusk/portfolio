@@ -29,7 +29,8 @@ export default function Projects() {
                             `Live`
                         ]}
                         metrics={[
-                            `10k Downloads`
+                            `12k Downloads`,
+                            `13 Stars`
                         ]}
                         techStack={[
                             `Java`,
@@ -44,7 +45,7 @@ export default function Projects() {
                         media={[
                             valaPluginScreenshot
                         ]}
-                        link="https://github.com/Tbusk/vala-jetbrains-plugin"
+                        link="https://github.com/vala-lang/vala-jetbrains"
                     />
 
                     <HrItem />
@@ -72,7 +73,7 @@ export default function Projects() {
                         ]}
                         techStack={[
                             `Python`,
-                            `Tensorflow`,
+                            `TensorFlow`,
                             `ROCm`,
                             `Ollama`,
                             `Selenium`
