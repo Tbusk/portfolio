@@ -11,6 +11,22 @@ export default function OpenSourceContributions() {
 
                 <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
                     <OpenSourceContribution
+                        name="getsolus / packages"
+                        link="https://github.com/getsolus/packages"
+                        description={
+                            `Monorepo for Solus Linux Repository`
+                        }
+                        content={[
+                            `Packaged and maintain the Stripe CLI application, an app used for stripe development`,
+                            `Packaged and maintain Vala Language Server, a language server for Vala`,
+                            `Packaged and maintain Vala Lint, a linter for Vala`,
+                            `Packaged and maintain IVPN, a popular privacy-focused VPN client`
+                        ]}
+                    />
+
+                    <HrItem />
+
+                    <OpenSourceContribution
                         name="vala-lang / vala-docs"
                         link="https://github.com/vala-lang/vala-docs"
                         description={
@@ -21,7 +37,7 @@ export default function OpenSourceContributions() {
                             `Ported hundreds of documentation from reStructuredText to Markdown`,
                             `Added documentation for numeric literal suffixes`,
                             `Added documentation on data type sizes and ranges`,
-                            `Ported archived gnome vala syntax guide from wiki`,
+                            `Ported archived gnome Vala syntax guide from wiki`,
                             `Various miscellaneous fixes and improvements`
                         ]}
                     />
@@ -32,7 +48,7 @@ export default function OpenSourceContributions() {
                         name="elementary / monitor"
                         link="https://github.com/elementary/monitor"
                         description={
-                            `Vala and GTK-based system monitor application made for the linux distro elementary OS`
+                            `Vala and GTK-based system monitor application made for the Linux distro elementary OS`
                         }
                         content={[
                             `Updated statusbar and indicator gpu usage to use most-active GPU on multi-GPU systems`,
@@ -50,7 +66,7 @@ export default function OpenSourceContributions() {
                         name="elementary / settings-power"
                         link="https://github.com/elementary/settings-power"
                         description={
-                            `Vala and GTK-based system power settings application made for the linux distro elementary OS`
+                            `Vala and GTK-based system power settings application made for the Linux distro elementary OS`
                         }
                         content={[
                             `Patched switch sizing issue being enlarged by dependency update`,
@@ -63,7 +79,7 @@ export default function OpenSourceContributions() {
                         name="elementary / appcenter-dashboard"
                         link="https://github.com/elementary/appcenter-dashboard"
                         description={
-                            `Elixer-based web app for managing appcenter apps made for the linux distro elementary OS`
+                            `Elixer-based web app for managing appcenter apps made for the Linux distro elementary OS`
                         }
                         content={[
                             `Patched issue where content was cut-off on mobile layouts`,
@@ -76,7 +92,7 @@ export default function OpenSourceContributions() {
                         name="elementary / screenshot"
                         link="https://github.com/elementary/screenshot"
                         description={
-                            `Vala and GTK-based screenshot application made for the linux distro elementary OS`
+                            `Vala and GTK-based screenshot application made for the Linux distro elementary OS`
                         }
                         content={[
                             `Patched segfault issue where app crashed when screenshot height is 1/4x or more greater than the width`,
