@@ -18,9 +18,38 @@ export default function Education() {
                         gpa="4.0"
                         link="https://ferris.edu"
                         achievements={["Dean's List", "College of Business Excellence Award Winner", "IEEE Member"]}
+                        courses={[
+                            "Applied Machine Learning Software",
+                            "Calculus I & Analytical Geometry",
+                            "Calculus II",
+                            "Capstone in SENG",
+                            "Computer Programming 1",
+                            "Computer Programming 2",
+                            "Data Warehousing & Intelligence",
+                            "Intro to Cloud App Development",
+                            "Intro to Database Design",
+                            "Intro to Machine Learning",
+                            "Intro to Micro Systems & Software",
+                            "Introduction To Statistics",
+                            "Linear Algebra And Differential Equations",
+                            "Program Graphical Interfaces",
+                            "Programming Languages",
+                            "Project Management Fundamentals",
+                            "SENG Applied Internship",
+                            "SENG Methodologies - Processes",
+                            "Software Component Design",
+                            "Software Configuration Management",
+                            "Software Data Structures",
+                            "Software Design - Architecture",
+                            "Software Development Industry Certification",
+                            "Software Engineering Tools",
+                            "Software Quality Assurance",
+                            "Software Requirements Management",
+                            "Web Application Development"
+                        ]}
                     />
 
-                    <HrItem />
+                    <HrItem/>
 
                     <EducationItem
                         name="Vocational - Computer Information Systems"
