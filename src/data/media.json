@@ -1,0 +1,9 @@
+{
+  "media": {
+    "valaPluginScreenshot": "./projects/media/vala_ide_plugin.png",
+    "portfolioScreenshot": "./projects/media/portfolio.png",
+    "resumeTemplateScreenshot": "./projects/media/resume_template.png",
+    "chatbotOpenDesktopScreenshot": "./projects/media/chatbot_open_desktop.png",
+    "chatbotClosedDesktopScreenshot": "./projects/media/chatbot_closed_desktop.png"
+  }
+}

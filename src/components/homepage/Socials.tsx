@@ -1,36 +1,22 @@
-import githubIcon from '../../assets/github_icon.svg';
-import linkedinIcon from '../../assets/linkedin_icon.svg';
-import documentIcon from '../../assets/document_icon.svg';
-import Social from "./Social.tsx";
+import Social, { type SocialProps } from "./Social.tsx";
+import socialsJson from '../../data/socials.json';
 
 export default function Socials() {
+
+    const {socials} = socialsJson;
+
     return (
         <>
             <div className="flex flex-col md:flex-row justify-center gap-3 py-8">
-                <Social
-                    name="Github"
-                    link="https://github.com/Tbusk"
-                    logo={githubIcon}
-                    logoAlt="GitHub Icon"
-                    imageHeight={42}
-                    imageWidth={42}
-                />
-                <Social
-                    name="LinkedIn"
-                    link="https://www.linkedin.com/in/trevor-busk/"
-                    logo={linkedinIcon}
-                    logoAlt="LinkedIn Icon"
-                    imageHeight={36}
-                    imageWidth={36}
-                />
-                <Social
-                    name="Resume"
-                    link="https://github.com/Tbusk/resume/blob/main/Resume.pdf"
-                    logo={documentIcon}
-                    logoAlt="Resume Download"
-                    imageHeight={42}
-                    imageWidth={42}
-                />
+                {socials && socials.length > 0 && socials.map((socialItem: SocialProps, index: number) =>
+                    <>
+                        <Social name={socialItem.name} link={socialItem.link} logo={socialItem.logo}
+                                logoAlt={socialItem.logoAlt} imageHeight={socialItem.imageHeight}
+                                imageWidth={socialItem.imageWidth}
+                                key={index}
+                        />
+                    </>
+                )}
             </div>
         </>
     );

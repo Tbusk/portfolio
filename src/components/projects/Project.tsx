@@ -1,7 +1,7 @@
 import Pills from "../common/pills/Pills.tsx";
 import Media from "../media/Media.tsx";
 
-interface ProjectProps {
+export interface ProjectProps {
     name: string;
     description: string;
     link?: string;

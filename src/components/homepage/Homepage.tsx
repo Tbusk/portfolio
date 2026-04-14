@@ -1,6 +1,11 @@
 import Socials from "./Socials.tsx";
+import myInfoJson from "../../data/my-info.json";
 
 export default function Homepage() {
+
+    const myInfo = myInfoJson;
+    document.title = `${myInfo.name} | Home`;
+
     return (
         <>
             <div className="flex flex-col justify-center items-center">
@@ -9,11 +14,11 @@ export default function Homepage() {
                 </div>
 
                 <div className="text-4xl md:text-8xl text-center md:text-start py-2 md:py-4 font-bold border-b-4 border-[#5294e2]">
-                    I'm Trevor Busk
+                    I'm {myInfo && myInfo.name}
                 </div>
 
                 <div className="text-2xl text-center md:text-start md:text-4xl py-4 md:py-6">
-                    A Full-Stack Software Engineer
+                    A {myInfo && myInfo.jobTitle}
                 </div>
 
                 <Socials />

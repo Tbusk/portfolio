@@ -1,6 +1,6 @@
 import Pills from "../common/pills/Pills.tsx";
 
-interface EducationItemProps {
+export interface EducationItemProps {
     name: string;
     institution: string;
     link: string;

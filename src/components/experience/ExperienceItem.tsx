@@ -1,4 +1,4 @@
-interface ExperienceItemProps {
+export interface ExperienceItemProps {
     company: string;
     website?: string;
     jobTitle: string;

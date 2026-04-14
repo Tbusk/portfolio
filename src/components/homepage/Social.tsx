@@ -1,4 +1,4 @@
-interface SocialProps {
+export interface SocialProps {
     name: string;
     link: string;
     logo:  string;

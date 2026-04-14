@@ -1,4 +1,4 @@
-interface OpenSourceContributionProps {
+export interface OpenSourceContributionProps {
     name: string;
     link: string;
     description: string;

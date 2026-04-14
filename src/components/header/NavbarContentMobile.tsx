@@ -1,4 +1,3 @@
-import hamburgerIcon from "../../assets/hamburger_icon.svg";
 import HeaderListItemMobile from "./HeaderListItemMobile.tsx";
 import { useState } from "preact/hooks";
 
@@ -11,7 +10,7 @@ export default function NavbarContentMobile() {
             <div className="md:hidden flex justify-end">
                 <div className="fixed top-4 right-4 z-50">
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="bg-white p-2 rounded-full border-2 border-gray-100">
-                        <img src={hamburgerIcon} alt="Hamburger Icon" height={28}
+                        <img src={"/assets/icons/hamburger_icon.svg"} alt="Hamburger Icon" height={28}
                              width={28}/>
                     </button>
                 </div>

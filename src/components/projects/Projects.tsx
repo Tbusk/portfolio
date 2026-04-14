@@ -1,13 +1,15 @@
-import Project from "./Project.tsx";
+import Project, { type ProjectProps } from "./Project.tsx";
 import SectionTitle from "../common/SectionTitle.tsx";
 import HrItem from "../common/HrItem.tsx";
-import valaPluginScreenshot from "./media/vala_ide_plugin.png";
-import portfolioScreenshot from "./media/portfolio.png";
-import resumeTemplateScreenshot from "./media/resume_template.png";
-import chatbotOpenDesktopScreenshot from "./media/chatbot_open_desktop.png";
-import chatbotClosedDesktopScreenshot from "./media/chatbot_closed_desktop.png";
+import projectsJson from '../../data/projects.json';
+import myInfoJson from "../../data/my-info.json";
 
 export default function Projects() {
+
+    const myInfo = myInfoJson;
+    document.title = `${myInfo.name} | Projects`;
+    const {projects} = projectsJson;
+
     return (
         <>
             <div className="flex flex-col">
@@ -15,179 +17,16 @@ export default function Projects() {
                 <SectionTitle title="Projects" id="projects"/>
 
                 <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
-                    <Project
-                        name="Vala Language Plugin for JetBrains IDEs"
-                        description={
-                            `
-                            Authored and published a language plugin for the Vala programming language. 
-                            `
-                        }
-                        tags={[
-                            `Open Source`,
-                            `Plugin`,
-                            `DevTool`,
-                            `Live`
-                        ]}
-                        metrics={[
-                            `12k Downloads`,
-                            `13 Stars`
-                        ]}
-                        techStack={[
-                            `Java`,
-                            `Vala`,
-                            `JetBrains Grammar Kit`,
-                            `LSP4IJ`,
-                            `JUnit`,
-                            `Gradle Groovy`,
-                            `Lex`,
-                            `BNF`
-                        ]}
-                        media={[
-                            valaPluginScreenshot
-                        ]}
-                        link="https://github.com/vala-lang/vala-jetbrains"
-                    />
+                    {projects && projects.length > 0 && projects.map((project: ProjectProps, index: number) =>
+                        <>
+                            <Project name={project.name} description={project.description}
+                                     techStack={project.techStack} media={project.media} link={project.link} key={index}
+                                     tags={project.tags} metrics={project.metrics}
+                            />
 
-                    <HrItem />
-
-                    <Project
-                        name="Warehouse Item Classification"
-                        description={
-                            `
-                            Engineered a machine learning computer vision system to reduce military disposition waste.
-                            `
-                        }
-                        tags={[
-                            `Machine Learning`,
-                            `Computer Vision`,
-                            `Image Classification`,
-                            `Collaborative`
-                        ]}
-                        metrics={[
-                            `Top-1 Accuracy: 89%`,
-                            `Top-5 Accuracy: 96%`,
-                            `228,000 images`,
-                            `29,500 items`,
-                            `2,450 categories`,
-                            `+12% over top OS models`
-                        ]}
-                        techStack={[
-                            `Python`,
-                            `TensorFlow`,
-                            `ROCm`,
-                            `Ollama`,
-                            `Selenium`
-                        ]}
-                    />
-
-                    <HrItem />
-
-                    <Project
-                        name="Portfolio"
-                        description={
-                            `
-                            Created this portfolio website showcasing my projects, experience, skills, and more.
-                            `
-                        }
-                        tags={[
-                            `Open Source`,
-                            `Website`,
-                            `Live`
-                        ]}
-                        techStack={[
-                            `HTML`,
-                            `CSS`,
-                            `TypeScript`,
-                            `Preact`,
-                            `Vite`,
-                            `Tailwind CSS`,
-                        ]}
-                        media={[
-                            portfolioScreenshot
-                        ]}
-                        link="https://github.com/Tbusk/portfolio"
-                    />
-
-                    <HrItem />
-
-                    <Project
-                        name="LaTeX Resume Template"
-                        description={
-                            `
-                            Created a modular LaTeX resume template which I use for my resume. 
-                            `
-                        }
-                        tags={[
-                            `Open Source`,
-                            `Template`,
-                        ]}
-                        techStack={[
-                            `LaTeX`,
-                        ]}
-                        media={[
-                            resumeTemplateScreenshot
-                        ]}
-                        link="https://github.com/Tbusk/resume"
-                    />
-
-                    <Project
-                        name="Customer Support Chatbot"
-                        description={
-                            `
-                            Created a ChatGPT-powered customer support chatbot widget for websites.
-                            `
-                        }
-                        tags={[
-                            `Open Source`,
-                            `Widget`,
-                            `Frontend`,
-                            `Backend`,
-                            `Monorepo`
-                        ]}
-                        techStack={[
-                            `Java`,
-                            `React`,
-                            `Vite`,
-                            `Tailwind CSS`,
-                            `Radix UI`,
-                            `Spring Boot`,
-                            `Spring AI OpenAI`,
-                            `Spring Web`,
-                            `Maven`,
-                            `JUnit`
-                        ]}
-                        media={[
-                            chatbotClosedDesktopScreenshot,
-                            chatbotOpenDesktopScreenshot
-                        ]}
-                        link="https://github.com/Tbusk/Customer-Support-Chatbot/"
-                    />
-
-                    <HrItem />
-
-                    <Project
-                        name="O/1 Stock Knapsack"
-                        description={
-                            `
-                            Solved an 0/1 stock knapsack problem via greedy, optimal, and dp-optimized approaches 
-                            algorithms.
-                            `
-                        }
-                        tags={[
-                            `Open Source`,
-                            `DSA`,
-                            `Collaborative`
-                        ]}
-                        techStack={[
-                            `Java`,
-                            `FasterXML Jackson CSV`,
-                            `Maven`,
-                            `JUnit`
-                        ]}
-                        link="https://github.com/Tbusk/Stock-Knapsack-Project/"
-                    />
-
-                    <HrItem />
+                            {index < projects.length - 1 && <HrItem/>}
+                        </>
+                    )}
                 </div>
             </div>
         </>
