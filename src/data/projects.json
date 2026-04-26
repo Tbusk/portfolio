@@ -4,7 +4,7 @@
       "name": "Vala Language Plugin for JetBrains IDEs",
       "description": "Authored and published a language plugin for the Vala programming language.",
       "tags": ["Open Source", "Plugin", "DevTool", "Live"],
-      "metrics": ["12k Downloads", "13 Stars"],
+      "metrics": ["15k Downloads", "13 Stars"],
       "techStack": ["Java", "Vala", "JetBrains Grammar Kit", "LSP4IJ", "JUnit", "Gradle Groovy", "Lex", "BNF"],
       "media": ["/assets/images/vala_ide_plugin.png"],
       "link": "https://github.com/vala-lang/vala-jetbrains"
@@ -29,7 +29,7 @@
       "description": "Created a modular LaTeX resume template which I use for my resume.",
       "tags": ["Open Source", "Template"],
       "techStack": ["LaTeX"],
-      "media": ["/assets/images/resume_template.png"],
+      "media": ["https://raw.githubusercontent.com/Tbusk/resume/refs/heads/main/media/ResumeScreenshot.png"],
       "link": "https://github.com/Tbusk/resume"
     },
     {
