@@ -6,7 +6,6 @@ import Experience from "./components/experience/Experience.tsx";
 import Education from "./components/education/Education.tsx";
 import Projects from "./components/projects/Projects.tsx";
 import OpenSourceContributions from "./components/open_source/OpenSourceContributions.tsx";
-import Contact from "./components/contact/Contact.tsx";
 
 
 export default function App() {
@@ -36,11 +35,6 @@ export default function App() {
             <Route path="/open-source">
                 <GeneralComponent hasHeading={true}>
                     <OpenSourceContributions/>
-                </GeneralComponent>
-            </Route>
-            <Route path="/contact">
-                <GeneralComponent hasHeading={true}>
-                    <Contact/>
                 </GeneralComponent>
             </Route>
         </Router>
