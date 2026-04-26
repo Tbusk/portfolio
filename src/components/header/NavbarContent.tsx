@@ -2,7 +2,7 @@ import HeaderListItem from "./HeaderListItem.tsx";
 
 export default function NavbarContent() {
     return (
-        <ul className="gap-8 justify-center hidden md:flex">
+        <ul className="gap-8 justify-center hidden md:flex md:h-22 md:px-4 md:items-end">
             <HeaderListItem name="Home" id="" key={0}/>
             <HeaderListItem name="Experience" id="experience" key={1}/>
             <HeaderListItem name="Education" id="education" key={2}/>
