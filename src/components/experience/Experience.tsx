@@ -2,12 +2,9 @@ import ExperienceItem, { type ExperienceItemProps } from "./ExperienceItem.tsx";
 import SectionTitle from "../common/SectionTitle.tsx";
 import HrItem from "../common/HrItem.tsx";
 import experienceJson from '../../data/experience.json';
-import myInfoJson from "../../data/my-info.json";
 
 export default function Experience() {
 
-    const myInfo = myInfoJson;
-    document.title = `${myInfo.name} | Experience`;
     const {experiences} = experienceJson;
 
     return (

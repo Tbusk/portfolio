@@ -2,12 +2,9 @@ import Project, { type ProjectProps } from "./Project.tsx";
 import SectionTitle from "../common/SectionTitle.tsx";
 import HrItem from "../common/HrItem.tsx";
 import projectsJson from '../../data/projects.json';
-import myInfoJson from "../../data/my-info.json";
 
 export default function Projects() {
 
-    const myInfo = myInfoJson;
-    document.title = `${myInfo.name} | Projects`;
     const {projects} = projectsJson;
 
     return (

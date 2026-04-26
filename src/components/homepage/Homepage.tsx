@@ -4,7 +4,6 @@ import myInfoJson from "../../data/my-info.json";
 export default function Homepage() {
 
     const myInfo = myInfoJson;
-    document.title = `${myInfo.name} | Home`;
 
     return (
         <div className="flex flex-col justify-center items-center">

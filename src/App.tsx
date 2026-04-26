@@ -11,29 +11,29 @@ import OpenSourceContributions from "./components/open_source/OpenSourceContribu
 export default function App() {
 
     return (
-        <Router hook={useHashLocation}>
+        <Router hook={useHashLocation} base="/">
             <Route path="/">
-                <GeneralComponent hasHeading={false}>
+                <GeneralComponent hasHeading={false} title="Home">
                     <Homepage/>
                 </GeneralComponent>
             </Route>
             <Route path="/experience">
-                <GeneralComponent hasHeading={true}>
+                <GeneralComponent hasHeading={true} title="Experience">
                     <Experience/>
                 </GeneralComponent>
             </Route>
             <Route path="/education">
-                <GeneralComponent hasHeading={true}>
+                <GeneralComponent hasHeading={true} title="Education">
                     <Education/>
                 </GeneralComponent>
             </Route>
             <Route path="/projects">
-                <GeneralComponent hasHeading={true}>
+                <GeneralComponent hasHeading={true} title="Projects">
                     <Projects/>
                 </GeneralComponent>
             </Route>
             <Route path="/open-source">
-                <GeneralComponent hasHeading={true}>
+                <GeneralComponent hasHeading={true} title="Open Source">
                     <OpenSourceContributions/>
                 </GeneralComponent>
             </Route>

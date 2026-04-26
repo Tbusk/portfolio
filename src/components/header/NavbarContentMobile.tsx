@@ -20,7 +20,7 @@ export default function NavbarContentMobile() {
                         Pages
                     </div>
                     <ul className="flex-row justify-center">
-                        <HeaderListItemMobile name="Home" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={0}/>
+                        <HeaderListItemMobile name="Home" id="" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={0}/>
                         <HeaderListItemMobile name="Experience" id="experience" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={1}/>
                         <HeaderListItemMobile name="Education" id="education" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={2}/>
                         <HeaderListItemMobile name="Projects" id="projects" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={3}/>
