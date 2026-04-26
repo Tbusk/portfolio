@@ -6,7 +6,6 @@ interface HeaderListItemMobileProps {
     id?: string;
     isOpen: boolean;
     setIsOpen: Dispatch<SetStateAction<boolean>>;
-    index: number;
 }
 
 export default function HeaderListItemMobile(props: HeaderListItemMobileProps) {
@@ -14,7 +13,7 @@ export default function HeaderListItemMobile(props: HeaderListItemMobileProps) {
     const highlight = document.documentURI.endsWith(`/${props.id ? props.id : ''}`)
 
     return (
-        <li className={`text-xl py-2 px-4 ${highlight ? 'underline-offset-4 underline' : 'text-gray-600 hover:text-black'}`} key={props.index}>
+        <li className={`text-xl py-2 px-4 ${highlight ? 'underline-offset-4 underline' : 'text-gray-600 hover:text-black'}`}>
             <a href={`#/${props.id ? props.id : ''}`} onClick={() => props.setIsOpen(!props.isOpen)}>
                 {props.name}
             </a>

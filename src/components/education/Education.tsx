@@ -11,27 +11,25 @@ export default function Education() {
     const {education} = educationJson;
 
     return (
-        <>
-            <div className="flex flex-col">
+        <div className="flex flex-col">
 
-                <SectionTitle title="Education" id="education"/>
+            <SectionTitle title="Education" id="education"/>
 
-                <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
+            <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
 
-                    {education && education.length > 0 && education.map((educationItem: EducationItemProps, index: number) =>
-                        <>
-                            <EducationItem name={educationItem.name} endDate={educationItem.endDate}
-                                           startDate={educationItem.startDate} link={educationItem.link}
-                                           institution={educationItem.institution} courses={educationItem.courses}
-                                           key={index} gpa={educationItem.gpa} achievements={educationItem.achievements}
-                            />
+                {education && education.length > 0 && education.map((educationItem: EducationItemProps, index: number) =>
+                    <div key={index}>
+                        <EducationItem name={educationItem.name} endDate={educationItem.endDate}
+                                       startDate={educationItem.startDate} link={educationItem.link}
+                                       institution={educationItem.institution} courses={educationItem.courses}
+                                       gpa={educationItem.gpa} achievements={educationItem.achievements}
+                        />
 
-                            {index < education.length - 1 && <HrItem/>}
-                        </>
-                    )}
+                        {index < education.length - 1 && <HrItem/>}
+                    </div>
+                )}
 
-                </div>
             </div>
-        </>
+        </div>
     );
 }

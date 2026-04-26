@@ -19,17 +19,16 @@ export default function OpenSourceContributions() {
                 <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
 
                     {contributions && contributions.length > 0 && contributions.map((openSourceItem: OpenSourceContributionProps, index: number) =>
-                        <>
+                        <div key={index}>
                             <OpenSourceContribution
                                 name={openSourceItem.name}
                                 link={openSourceItem.link}
                                 description={openSourceItem.description}
                                 content={openSourceItem.content}
-                                key={index}
                             />
 
                             {index < contributions.length - 1 && <HrItem/>}
-                        </>
+                        </div>
                     )}
 
                 </div>
