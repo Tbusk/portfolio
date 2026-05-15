@@ -4,7 +4,7 @@ import NavbarContent from "./NavbarContent.tsx";
 export default function Header() {
 
     return (
-        <div className="sticky top-0 bg-white w-screen">
+        <div className="sticky top-0 bg-white w-screen z-50">
             <nav className="absolute w-screen bg-white border-b-2 border-gray-200">
                 <NavbarContent/>
                 <NavbarContentMobile/>
