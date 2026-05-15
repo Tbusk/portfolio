@@ -1,18 +1,19 @@
+import DateRange from "../common/DateRange.tsx";
+
 export interface ExperienceItemProps {
     company: string;
     website?: string;
     jobTitle: string;
     description: string[];
     startDate: string;
-    endDate: string;
+    endDate: string|null;
 }
 
 export default function ExperienceItem(props: ExperienceItemProps) {
     return (
         <div className="pb-6">
-            <div className="text-lg pb-2">
-                {props.startDate} - {props.endDate}
-            </div>
+
+            <DateRange startDate={props.startDate} endDate={props.endDate}/>
 
             <div className="text-2xl font-bold pb-2 text-[#5294e2]">
                 {props.jobTitle}

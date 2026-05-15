@@ -4,8 +4,8 @@
       "name": "BSc. Digital Media Software Engineering",
       "institution": "Ferris State University",
       "link": "https://ferris.edu",
-      "startDate": "May 2022",
-      "endDate": "May 2026",
+      "startDate": "2022-5-1",
+      "endDate": "2026-5-10",
       "gpa": "4.0",
       "achievements": ["Dean's List", "College of Business Excellence Award Winner", "IEEE Member"],
       "courses": [
@@ -42,8 +42,8 @@
       "name": "Vocational - Computer Information Systems",
       "institution": "Allegan County Area Technical & Education Center",
       "link": "https://www.alleganaesa.org/o/techcenter",
-      "startDate": "Sept 2015",
-      "endDate": "May 2017",
+      "startDate": "2015-9-4",
+      "endDate": "2017-05-10",
       "gpa": "3.8"
     }
   ]

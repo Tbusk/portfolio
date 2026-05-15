@@ -4,8 +4,8 @@
       "company": "Ferris State University",
       "website": "https://ferris.edu",
       "jobTitle": "Research Assistant",
-      "startDate": "Jan 2026",
-      "endDate": "Present",
+      "startDate": "2026-1-12",
+      "endDate": "2026-5-10",
       "description": [
         "Served as the sole developer for Ferrell, a custom LLM-powered VS Code extension designed to support software development students.",
         "Built the application from scratch, connecting a modern webview frontend (React, TypeScript, Tailwind) to a secure, Dockerized Java Spring Boot backend and PostgreSQL database hosted on AWS.",
@@ -19,8 +19,8 @@
       "company": "AD Solutions",
       "website": "https://myadsusa.com",
       "jobTitle": "Software Engineer",
-      "startDate": "June 2024",
-      "endDate": "Present",
+      "startDate": "2024-6-1",
+      "endDate": null,
       "description": [
         "Owned the end-to-end project lifecycle after securing a solo contract, automating the entire software delivery process by architecting a multi-stage CI/CD pipeline with GitHub Actions for testing, Docker builds, and secure, one-click deployments.",
         "Engineered a secure internal portal using React, TypeScript, and Bootstrap as well as a customer masquerade feature that reduced support resolution times.",
@@ -32,8 +32,8 @@
     {
       "company": "Telic Corporation",
       "jobTitle": "Software Engineer",
-      "startDate": "Oct 2025",
-      "endDate": "Apr 2026",
+      "startDate": "2025-10-12",
+      "endDate": "2026-4-1",
       "description": [
         "Built a full-stack web application for personalized children's books using Next.js, React, Tailwind CSS, PayloadCMS, and PostgreSQL.",
         "Researched and evaluated dozens of ML models and platforms for image generation, mixing, face-swapping, and feature alteration to power the book personalization engine.",
@@ -46,8 +46,8 @@
       "company": "Kendall College of Art and Design",
       "website": "https://www.ferris.edu/art-design/",
       "jobTitle": "Software Engineer Intern",
-      "startDate": "Sept 2023",
-      "endDate": "May 2024",
+      "startDate": "2023-9-12",
+      "endDate": "2024-5-12",
       "description": [
         "Engineered the core backend for an industry-first billing portal by designing a Spring Boot application with MariaDB database and integrating with a massive, undocumented ERP system by creating at least a dozen RESTful APIs.",
         "Developed key frontend components using React and TypeScript, including secure login, payment, and autopay UIs, while also driving project velocity by managing the team's agile workflow and issue tracking on GitHub."
