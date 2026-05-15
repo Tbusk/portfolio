@@ -1,5 +1,6 @@
 import Pills from "../common/pills/Pills.tsx";
 import DateRange from "../common/DateRange.tsx";
+import SubSectionTitle from "../common/SubSectionTitle.tsx";
 
 export interface EducationItemProps {
     name: string;
@@ -17,9 +18,7 @@ export default function EducationItem(props: EducationItemProps) {
         <div className="pb-6">
             <DateRange startDate={props.startDate} endDate={props.endDate}/>
 
-            <div className="text-2xl font-bold pb-2 text-[#5294e2]">
-                {props.name}
-            </div>
+            <SubSectionTitle name={props.name}/>
 
             <div className="text-lg pb-2">
                 <a href={props.link} className="underline">

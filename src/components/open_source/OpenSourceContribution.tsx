@@ -1,3 +1,5 @@
+import SubSectionTitle from "../common/SubSectionTitle.tsx";
+
 export interface OpenSourceContributionProps {
     name: string;
     link: string;
@@ -8,9 +10,9 @@ export interface OpenSourceContributionProps {
 export default function OpenSourceContribution(props: OpenSourceContributionProps) {
     return (
         <div className="pb-8">
-            <div className="text-2xl pb-3 font-bold text-[#5294e2]">
-                {props.name}
-            </div>
+
+            <SubSectionTitle name={props.name}/>
+
             <div className="pb-3">
                 {props.description}
             </div>

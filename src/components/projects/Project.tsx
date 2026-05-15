@@ -1,5 +1,6 @@
 import Pills from "../common/pills/Pills.tsx";
 import Media from "../media/Media.tsx";
+import SubSectionTitle from "../common/SubSectionTitle.tsx";
 
 export interface ProjectProps {
     name: string;
@@ -14,9 +15,8 @@ export interface ProjectProps {
 export default function Project(props: ProjectProps) {
     return (
         <div className="pb-8">
-            <div className="text-2xl font-bold pb-3 text-[#5294e2]">
-                {props.name}
-            </div>
+            <SubSectionTitle name={props.name}/>
+
             <div className="pb-3">
                 {props.description}
             </div>
