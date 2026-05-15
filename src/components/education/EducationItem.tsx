@@ -1,6 +1,6 @@
-import Pills from "../common/pills/Pills.tsx";
 import DateRange from "../common/DateRange.tsx";
 import SubSectionTitle from "../common/SubSectionTitle.tsx";
+import PillsComponent from "../common/PillsComponent.tsx";
 
 export interface EducationItemProps {
     name: string;
@@ -27,30 +27,15 @@ export default function EducationItem(props: EducationItemProps) {
             </div>
 
             {props.courses && props.courses.length > 0 && (
-                <div className="pt-2 pb-3">
-                    <div className="font-bold text-gray-600 pb-3">
-                        Courses
-                    </div>
-                    <Pills items={props.courses} />
-                </div>
+                <PillsComponent name="Courses" items={props.courses} />
             )}
 
             {props.achievements && props.achievements.length > 0 && (
-                <div className="pt-2 pb-3">
-                    <div className="font-bold text-gray-600 pb-3">
-                        Achievements
-                    </div>
-                    <Pills items={props.achievements} />
-                </div>
+                <PillsComponent name="Achievements" items={props.achievements} />
             )}
 
             {props.gpa && (
-                <div className="pt-2 pb-3">
-                    <div className="font-bold text-gray-600 pb-3">
-                        GPA
-                    </div>
-                    <Pills items={[props.gpa]} />
-                </div>
+                <PillsComponent name="GPA" items={[props.gpa]} />
             )}
         </div>
     );

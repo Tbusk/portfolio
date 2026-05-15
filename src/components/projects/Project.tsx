@@ -1,6 +1,6 @@
-import Pills from "../common/pills/Pills.tsx";
 import Media from "../media/Media.tsx";
 import SubSectionTitle from "../common/SubSectionTitle.tsx";
+import PillsComponent from "../common/PillsComponent.tsx";
 
 export interface ProjectProps {
     name: string;
@@ -17,44 +17,20 @@ export default function Project(props: ProjectProps) {
         <div className="pb-8">
             <SubSectionTitle name={props.name}/>
 
-            <div className="pb-3">
+            <div className="pb-2">
                 {props.description}
             </div>
 
             {props.tags && props.tags.length > 0 && (
-                <div>
-                    <div className="font-bold text-gray-600">
-                        Tags
-                    </div>
-
-                    <div className="py-3">
-                        <Pills items={props.tags}/>
-                    </div>
-                </div>
+                <PillsComponent name="Tags" items={props.tags} />
             )}
 
             {props.metrics && props.metrics.length > 0 && (
-                <div>
-                    <div className="font-bold text-gray-600">
-                        Metrics
-                    </div>
-
-                    <div className="py-3">
-                        <Pills items={props.metrics}/>
-                    </div>
-                </div>
+                <PillsComponent name="Metrics" items={props.metrics} />
             )}
 
             {props.techStack && props.techStack.length > 0 && (
-                <div>
-                    <div className="font-bold text-gray-600">
-                        Tech Stack
-                    </div>
-
-                    <div className="py-3">
-                        <Pills items={props.techStack}/>
-                    </div>
-                </div>
+                <PillsComponent name="Tech Stack" items={props.techStack} />
             )}
 
             {props.media && props.media.length > 0 && (
