@@ -1,5 +1,4 @@
 import EducationItem, { type EducationItemProps } from "./EducationItem.tsx";
-import SectionTitle from "../common/SectionTitle.tsx";
 import HrItem from "../common/HrItem.tsx";
 import educationJson from '../../data/education.json';
 
@@ -8,25 +7,25 @@ export default function Education() {
     const {education} = educationJson;
 
     return (
-        <div className="flex flex-col">
+        <>
+            {education && education.length > 0 && education.map((educationItem: EducationItemProps, index: number) =>
+                <div key={index}>
 
-            <SectionTitle title="Education" id="education"/>
+                    <EducationItem
+                        name={educationItem.name}
+                        endDate={educationItem.endDate}
+                        startDate={educationItem.startDate}
+                        link={educationItem.link}
+                        institution={educationItem.institution}
+                        courses={educationItem.courses}
+                        gpa={educationItem.gpa}
+                        achievements={educationItem.achievements}
+                    />
 
-            <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
+                    {index < education.length - 1 && <HrItem/>}
 
-                {education && education.length > 0 && education.map((educationItem: EducationItemProps, index: number) =>
-                    <div key={index}>
-                        <EducationItem name={educationItem.name} endDate={educationItem.endDate}
-                                       startDate={educationItem.startDate} link={educationItem.link}
-                                       institution={educationItem.institution} courses={educationItem.courses}
-                                       gpa={educationItem.gpa} achievements={educationItem.achievements}
-                        />
-
-                        {index < education.length - 1 && <HrItem/>}
-                    </div>
-                )}
-
-            </div>
-        </div>
+                </div>
+            )}
+        </>
     );
 }

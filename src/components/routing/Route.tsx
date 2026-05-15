@@ -45,12 +45,6 @@ export const routes : RouteProps[] = [
         component: <OpenSourceContributions/>
     },
     {
-        path: "/open-source",
-        hasHeading: true,
-        title: "Open Source",
-        component: <OpenSourceContributions/>
-    },
-    {
         path: undefined,
         hasHeading: false,
         title: "404 Not Found",

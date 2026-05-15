@@ -3,6 +3,7 @@ import Footer from "../footer/Footer.tsx";
 import type { ComponentChildren } from "preact";
 import { useEffect } from "preact/hooks";
 import myInfoJson from "../../data/my-info.json";
+import SectionTitle from "./SectionTitle.tsx";
 
 interface GeneralComponentProps {
     children?: ComponentChildren;
@@ -23,7 +24,17 @@ export default function GeneralComponent(props: GeneralComponentProps) {
             <Header />
             <div className="container mx-auto ">
                 <div className={`min-h-[92.6vh] ${props.hasHeading ? "pt-0 md:pt-24" : "flex justify-center"}`}>
-                    {props.children}
+                    {props.hasHeading ? (
+                        <div className="flex flex-col">
+
+                            <SectionTitle title={props.title}/>
+
+                            <div className="flex flex-col gap-8 md:pt-2 md:px-2 px-6">
+                                {props.children}
+                            </div>
+
+                        </div>
+                    ) : props.children}
                 </div>
 
                 <Footer />
