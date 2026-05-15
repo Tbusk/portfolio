@@ -39,13 +39,6 @@
       "techStack": ["Java", "React", "Vite", "Tailwind CSS", "Radix UI", "Spring Boot", "Spring AI OpenAI", "Spring Web", "Maven", "JUnit"],
       "media": ["/assets/images/chatbot_closed_desktop.png", "/assets/images/chatbot_open_desktop.png"],
       "link": "https://github.com/Tbusk/Customer-Support-Chatbot/"
-    },
-    {
-      "name": "O/1 Stock Knapsack",
-      "description": "Solved an 0/1 stock knapsack problem via greedy, optimal, and dp-optimized approaches algorithms.",
-      "tags": ["Open Source", "DSA", "Collaborative"],
-      "techStack": ["Java", "FasterXML Jackson CSV", "Maven", "JUnit"],
-      "link": "https://github.com/Tbusk/Stock-Knapsack-Project/"
     }
   ]
 }
