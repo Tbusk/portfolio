@@ -34,15 +34,7 @@ export default function Project(props: ProjectProps) {
             )}
 
             {props.media && props.media.length > 0 && (
-                <div>
-                    <div className="font-bold text-gray-600">
-                        Media
-                    </div>
-
-                    <div className="py-3">
-                        <Media items={props.media}/>
-                    </div>
-                </div>
+                <Media items={props.media}/>
             )}
 
 
@@ -55,7 +47,7 @@ export default function Project(props: ProjectProps) {
                     </div>
                 </div>
                 :
-                ''
+                <></>
             }
         </div>
     );

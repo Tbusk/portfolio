@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "preact": "^10.27.2",
+    "swiper": "^12.1.4",
     "wouter": "^3.9.0"
   },
   "devDependencies": {
