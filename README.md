@@ -44,6 +44,7 @@ This web app is deployed to GitHub Pages automatically via GitHub Actions.
 - **Tailwind CSS**
 - **Wouter**
 - **Preact**
+- **Swiper**
 
 ## License
 
