@@ -20,22 +20,22 @@ export default function EducationItem(props: EducationItemProps) {
 
             <SubSectionTitle name={props.name}/>
 
-            <div className="text-lg pb-2 dark:text-(--darkmode-text-color-tertiary) dark:hover:text-(--darkmode-text-color-secondary)">
+            <div className="text-lg pb-2 dark:text-(--darkmode-text-color-tertiary) dark:hover:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) hover:text-(--lightmode-text-color-primary)">
                 <a href={props.link} className="underline">
                     {props.institution}
                 </a>
             </div>
 
-            {props.courses && props.courses.length > 0 && (
-                <PillsComponent name="Courses" items={props.courses} />
+            {props.gpa && (
+                <PillsComponent name="GPA" items={[props.gpa]} />
             )}
 
             {props.achievements && props.achievements.length > 0 && (
                 <PillsComponent name="Achievements" items={props.achievements} />
             )}
 
-            {props.gpa && (
-                <PillsComponent name="GPA" items={[props.gpa]} />
+            {props.courses && props.courses.length > 0 && (
+                <PillsComponent name="Courses" items={props.courses} />
             )}
         </div>
     );
