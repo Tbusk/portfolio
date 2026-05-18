@@ -10,7 +10,7 @@ export default function Media(props: MediaProps) {
     return (
         <div>
 
-            <div className="font-bold text-gray-600 pt-2 pb-3">
+            <div className="font-bold text-gray-600 pt-2 pb-3 dark:text-(--darkmode-text-color-tertiary)">
                 Media
             </div>
 
