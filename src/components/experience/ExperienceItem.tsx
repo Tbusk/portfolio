@@ -18,15 +18,15 @@ export default function ExperienceItem(props: ExperienceItemProps) {
 
             <SubSectionTitle name={props.jobTitle}/>
 
-            <div className="text-lg pb-2">
+            <div className="text-lg pb-2 dark:text-(--darkmode-text-color-tertiary)">
                 {props.website ? (
-                    <a className="underline" href={props.website}>
+                    <a className="underline dark:hover:text-(--darkmode-text-color-secondary) hover:text-(--lightmode-text-color-secondary)" href={props.website}>
                         {props.company}
                     </a>
-                ) : `${props.company}`}
+                ) : <div className="">{props.company}</div>}
             </div>
 
-            <ul className="list-disc pl-4">
+            <ul className="list-disc pl-4 dark:text-(--darkmode-text-color-primary)">
                 {props.description.map((content, index) => (
                     <li className="pl-2 py-1.5" key={index}>
                         {content}

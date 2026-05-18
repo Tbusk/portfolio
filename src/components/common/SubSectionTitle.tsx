@@ -5,7 +5,7 @@ interface SubSectionTitleProps {
 
 export default function SubSectionTitle(props: SubSectionTitleProps) {
     return (
-        <div className="text-2xl font-bold pb-3 text-[#5294e2]">
+        <div className="text-2xl font-bold pb-3 text-(--accent-color)">
             {props.name}
         </div>
     );

@@ -1,4 +1,5 @@
 import SubSectionTitle from "../common/SubSectionTitle.tsx";
+import ViewButton from "../common/ViewButton.tsx";
 
 export interface OpenSourceContributionProps {
     name: string;
@@ -13,16 +14,16 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
 
             <SubSectionTitle name={props.name}/>
 
-            <div className="pb-3">
+            <div className="pb-3 dark:text-(--darkmode-text-color-tertiary)">
                 {props.description}
             </div>
             <div>
-                <div className="font-bold text-gray-600 pb-1">
+                <div className="font-bold text-gray-600 dark:text-(--darkmode-text-color-tertiary) pb-1">
                     Contributions
                 </div>
                 <ul className="list-disc pl-6">
                     {props.content.map((content, index) => (
-                        <li className="pl-2 py-1.5" key={index}>
+                        <li className="pl-2 py-1.5 dark:text-white" key={index}>
                             {content}
                         </li>
                     ))}
@@ -30,13 +31,7 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
             </div>
 
             {props.link ?
-                <div className="pt-4 flex">
-                    <div className="rounded-xl py-2 px-10 hover:bg-gray-200 bg-gray-100 border border-gray-400">
-                        <a href={props.link} className="text-md font-bold text-gray-600">
-                            View Project
-                        </a>
-                    </div>
-                </div>
+                <ViewButton link={props.link} />
                 :
                 ''
             }
