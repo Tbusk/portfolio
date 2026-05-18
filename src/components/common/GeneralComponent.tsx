@@ -22,7 +22,7 @@ export default function GeneralComponent(props: GeneralComponentProps) {
     return (
         <div className="min-h-screen bg-[--lightmode-background-color] dark:bg-(--darkmode-background-color)">
             <Header />
-            <div className="container mx-auto">
+            <div className="container mx-auto xl:max-w-3/5">
                 <div className={`min-h-[92.6vh] ${props.hasHeading ? "pt-0 md:pt-24" : "flex justify-center"}`}>
                     {props.hasHeading ? (
                         <div className="flex flex-col">
