@@ -7,7 +7,7 @@ export default function Homepage() {
 
     return (
         <div className="flex flex-col justify-center items-center">
-            <div className="text-3xl md:text-6xl text-center md:text-start py-1 md:py-4 dark:text-(--darkmode-text-color-secondary)">
+            <div className="text-3xl md:text-6xl text-center md:text-start py-1 md:py-4 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
                 Hiya
             </div>
 
@@ -15,7 +15,7 @@ export default function Homepage() {
                 I'm {myInfo && myInfo.name}
             </div>
 
-            <div className="text-2xl text-center md:text-start md:text-4xl py-4 md:py-6 dark:text-(--darkmode-text-color-tertiary)">
+            <div className="text-2xl text-center md:text-start md:text-4xl py-4 md:py-6 dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary)">
                 A {myInfo && myInfo.jobTitle}
             </div>
 

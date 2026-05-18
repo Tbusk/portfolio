@@ -14,11 +14,11 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
 
             <SubSectionTitle name={props.name}/>
 
-            <div className="pb-3 dark:text-(--darkmode-text-color-tertiary)">
+            <div className="pb-3 dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-tertiary)">
                 {props.description}
             </div>
             <div>
-                <div className="font-bold text-gray-600 dark:text-(--darkmode-text-color-tertiary) pb-1">
+                <div className="font-bold text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) pb-1">
                     Contributions
                 </div>
                 <ul className="list-disc pl-6">

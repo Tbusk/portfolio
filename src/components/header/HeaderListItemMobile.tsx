@@ -15,7 +15,7 @@ export default function HeaderListItemMobile(props: HeaderListItemMobileProps) {
     const highlight = (location === "" || location === `/${props.id}`);
 
     return (
-        <li className={`text-xl py-2 px-4 dark:text-(--darkmode-text-color-primary) ${highlight ? 'underline-offset-4 underline' : 'text-gray-600 dark:text-(--darkmode-text-color-tertiary) hover:text-black dark:hover:text-(--darkmode-text-color-secondary)'}`}>
+        <li className={`text-xl py-2 px-4 dark:text-(--darkmode-text-color-primary) ${highlight ? 'underline-offset-4 underline' : 'text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) hover:text-black dark:hover:text-(--darkmode-text-color-secondary)'}`}>
             <a href={`#/${props.id ? props.id : ''}`} onClick={() => props.setIsOpen(!props.isOpen)}>
                 {props.name}
             </a>

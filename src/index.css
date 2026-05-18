@@ -15,7 +15,9 @@ html,body {
     --lightmode-background-color-tertiary: #e5e5e5;
     --darkmode-background-color: #0d0e11;
     /* Text */
-    --lightmode-text-color-secondary: #6a7282;
+    --lightmode-text-color-primary: black;
+    --lightmode-text-color-secondary: #363b43;
+    --lightmode-text-color-tertiary: #4a5565;
     --darkmode-text-color-primary: white;
     --darkmode-text-color-secondary: #d1d5dc;
     --darkmode-text-color-tertiary: #a3a7ac;

@@ -6,11 +6,11 @@ export default function NotFound() {
                 Whoops!
             </div>
 
-            <div className="text-3xl md:text-6xl text-center md:text-start py-1 md:py-4 dark:text-(--darkmode-text-color-tertiary)">
+            <div className="text-3xl md:text-6xl text-center md:text-start py-1 md:py-4 dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary)">
                 This page doesn't exist
             </div>
 
-            <div className="text-2xl py-20 md:w-140 px-4 md:px-8 text-center dark:text-(--darkmode-text-color-secondary)">
+            <div className="text-2xl py-20 md:w-140 px-4 md:px-8 text-center dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-tertiary)">
                 Use the navbar to navigate to other pages.
             </div>
         </div>
