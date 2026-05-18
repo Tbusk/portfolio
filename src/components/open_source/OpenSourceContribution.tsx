@@ -23,18 +23,16 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
                 </div>
                 <ul className="list-disc pl-6">
                     {props.content.map((content, index) => (
-                        <li className="pl-2 py-1.5 dark:text-white" key={index}>
+                        <li className="pl-2 py-1.5 dark:text-(--darkmode-text-color-primary)" key={index}>
                             {content}
                         </li>
                     ))}
                 </ul>
             </div>
 
-            {props.link ?
+            {props.link && (
                 <ViewButton link={props.link} />
-                :
-                ''
-            }
+            )}
         </div>
     )
 }
