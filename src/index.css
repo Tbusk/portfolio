@@ -3,6 +3,29 @@
 @import "swiper/css/pagination";
 @import "tailwindcss";
 
-html {
+html,body {
     scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+@theme {
+    /* Background */
+    --lightmode-background-color: white;
+    --lightmode-background-color-secondary: #f3f3f3;
+    --lightmode-background-color-tertiary: #e5e5e5;
+    --darkmode-background-color: #0d0e11;
+    /* Text */
+    --lightmode-text-color-secondary: #6a7282;
+    --darkmode-text-color-primary: white;
+    --darkmode-text-color-secondary: #d1d5dc;
+    --darkmode-text-color-tertiary: #a3a7ac;
+    /* Border */
+    --darkmode-border-color: #364153;
+    --lightmode-border-color: #e5e7eb;
+    /* Accents */
+    --accent-color: #5294e2;
+    --accent-color-hover: #4781c7;
+    /* Pills */
+    --darkmode-pill-background-color: #364153;
+    --lightmode-pill-background-color: #e5e7eb;
 }

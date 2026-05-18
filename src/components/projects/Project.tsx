@@ -1,6 +1,7 @@
 import Media from "../media/Media.tsx";
 import SubSectionTitle from "../common/SubSectionTitle.tsx";
 import PillsComponent from "../common/PillsComponent.tsx";
+import ViewButton from "../common/ViewButton.tsx";
 
 export interface ProjectProps {
     name: string;
@@ -17,20 +18,20 @@ export default function Project(props: ProjectProps) {
         <div className="pb-8">
             <SubSectionTitle name={props.name}/>
 
-            <div className="pb-2">
+            <div className="pb-2 dark:text-(--darkmode-text-color-primary)">
                 {props.description}
             </div>
 
             {props.tags && props.tags.length > 0 && (
-                <PillsComponent name="Tags" items={props.tags} />
+                <PillsComponent name="Tags" items={props.tags}/>
             )}
 
             {props.metrics && props.metrics.length > 0 && (
-                <PillsComponent name="Metrics" items={props.metrics} />
+                <PillsComponent name="Metrics" items={props.metrics}/>
             )}
 
             {props.techStack && props.techStack.length > 0 && (
-                <PillsComponent name="Tech Stack" items={props.techStack} />
+                <PillsComponent name="Tech Stack" items={props.techStack}/>
             )}
 
             {props.media && props.media.length > 0 && (
@@ -39,13 +40,7 @@ export default function Project(props: ProjectProps) {
 
 
             {props.link ?
-                <div className="pt-4 flex">
-                    <div className="rounded-xl py-2 px-10 hover:bg-gray-200 bg-gray-100 border border-gray-400">
-                        <a href={props.link} className="text-md font-bold text-gray-600">
-                            View Project
-                        </a>
-                    </div>
-                </div>
+                <ViewButton link={props.link} />
                 :
                 <></>
             }
