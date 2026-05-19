@@ -59,7 +59,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
             {props.description.length > 5 && (
                 <>
                     {!showAll ? (
-                        <ShowHideButton setShowAll={setShowAll} showAll={true} description="Continue" />
+                        <ShowHideButton setShowAll={setShowAll} showAll={true} description="Expand" />
                     ) : (
                         <ShowHideButton setShowAll={setShowAll} showAll={false} description="Hide" />
                     )}
