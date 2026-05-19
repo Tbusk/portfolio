@@ -21,7 +21,7 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
                 <div className="font-bold text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) pb-1">
                     Contributions
                 </div>
-                <ul className="list-disc pl-6">
+                <ul className="list-disc pl-4">
                     {props.content.map((content, index) => (
                         <li className="pl-2 py-1.5 dark:text-(--darkmode-text-color-primary)" key={index}>
                             {content}
