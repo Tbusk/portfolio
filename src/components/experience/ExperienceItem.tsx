@@ -43,7 +43,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
                 Summary
             </div>
 
-            <ul className="list-disc pl-5 dark:text-(--darkmode-text-color-primary)">
+            <ul className="list-disc pl-4 dark:text-(--darkmode-text-color-primary)">
                 {props.description && props.description.slice(0, (props.description.length > 5 ? 5 : props.description.length)).map((content, index) => (
                     <li className="pl-2 py-1.5" key={index}>
                         {content}
