@@ -69,7 +69,7 @@
     },
     {
       "name": "Warehouse Item Classification",
-      "description": "Engineered a machine learning computer vision system to reduce military disposition waste.",
+      "description": "Worked with a military contractor in a small team and built a machine learning computer vision system to reduce disposition waste.",
       "tags": [
         "Machine Learning",
         "Computer Vision",
@@ -87,14 +87,18 @@
       "techStack": [
         "Python",
         "TensorFlow",
+        "Keras",
+        "Matplotlib",
         "ROCm",
         "Ollama",
-        "Selenium"
+        "Selenium",
+        "Numpy",
+        "Pandas"
       ]
     },
     {
       "name": "Portfolio",
-      "description": "Created this portfolio website showcasing my projects, experience, skills, and more.",
+      "description": "Created this portfolio website template showcasing my projects, experience, skills, and more.",
       "tags": [
         "Open Source",
         "Website",
@@ -154,7 +158,7 @@
     },
     {
       "name": "LaTeX Resume Template",
-      "description": "Created a modular LaTeX resume template which I use for my resume.",
+      "description": "Created a modular resume template which I use for my resume.",
       "tags": [
         "Open Source",
         "Template"
