@@ -3,7 +3,7 @@
     {
       "name": "getsolus / packages",
       "link": "https://github.com/getsolus/packages",
-      "description": "Monorepo for Solus Linux Repository",
+      "description": "Package repository for the Solus Linux distribution",
       "content": [
         "Packaged and maintain the Stripe CLI application, an app used for stripe development",
         "Packaged and maintain Vala Language Server, a language server for Vala",
@@ -14,7 +14,7 @@
     {
       "name": "vala-lang / vala-docs",
       "link": "https://github.com/vala-lang/vala-docs",
-      "description": "Documentation website for the Vala programming language live at docs.vala.dev",
+      "description": "Documentation website for the Vala programming language",
       "content": [
         "Ported static site generator from Sphinx to VitePress",
         "Ported hundreds of documentation from reStructuredText to Markdown",
@@ -64,7 +64,7 @@
     {
       "name": "greenmail-mail-test / greenmail",
       "link": "https://github.com/greenmail-mail-test/greenmail",
-      "description": "Java-based email testing library to send, receive, and verify emails for testing",
+      "description": "Java-based email testing library to send, receive, and verify emails",
       "content": [
         "Patched issue where duplicate mime messages were showing up when cc and bcc share the same address as the destination"
       ]
