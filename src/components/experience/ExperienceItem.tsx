@@ -1,5 +1,6 @@
 import DateRange from "../common/DateRange.tsx";
 import SubSectionTitle from "../common/SubSectionTitle.tsx";
+import PillsComponent from "../common/PillsComponent.tsx";
 
 export interface ExperienceItemProps {
     company: string;
@@ -7,6 +8,7 @@ export interface ExperienceItemProps {
     jobTitle: string;
     description: string[];
     startDate: string;
+    techStack?: string[];
     endDate: string|null;
 }
 
@@ -18,7 +20,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
 
             <SubSectionTitle name={props.jobTitle}/>
 
-            <div className="text-md dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary) pb-4">
+            <div className="text-md dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary) pb-2">
                 {props.website ? (
                     <a className="underline dark:hover:text-(--darkmode-text-color-secondary) hover:text-(--lightmode-text-color-secondary)" href={props.website}>
                         {props.company}
@@ -26,7 +28,11 @@ export default function ExperienceItem(props: ExperienceItemProps) {
                 ) : <div className="">{props.company}</div>}
             </div>
 
-            <div className="font-bold text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) pb-1">
+            {props.techStack && props.techStack.length > 0 && (
+                <PillsComponent name="Tech Stack" items={props.techStack}/>
+            )}
+
+            <div className={`font-bold text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) pb-1 ${props.techStack && props.techStack.length > 0 ? 'pt-1' : ''}`}>
                 Summary
             </div>
 

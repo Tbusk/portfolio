@@ -18,6 +18,7 @@ export default function Experience() {
                         startDate={experience.startDate}
                         endDate={experience.endDate}
                         description={experience.description}
+                        techStack={experience.techStack}
                     />
 
                     {index < experiences.length - 1 && <HrItem/>}

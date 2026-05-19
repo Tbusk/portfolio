@@ -1,6 +1,55 @@
 {
   "experiences": [
     {
+      "company": "AD Solutions",
+      "website": "https://myadsusa.com",
+      "jobTitle": "Software Engineer",
+      "startDate": "2024-6-1",
+      "endDate": null,
+      "description": [
+        "Owned the end-to-end project lifecycle after securing a solo contract, automating the entire software delivery process by architecting a multi-stage CI/CD pipeline with GitHub Actions for testing, Docker builds, and secure, one-click deployments.",
+        "Engineered a secure internal portal using React, TypeScript, and Bootstrap as well as a customer masquerade feature that reduced support resolution times.",
+        "Designed and implemented a new, normalized database schema from the ground up to enhance the platform scalability from the existing few thousand customers to much, much more.",
+        "Developed a high-performance payment automation that processes complex transactions across 20+ tables in-real-time, eliminating manual accounting intervention and saving dozens of hours per month.",
+        "Created cross-departmental automation tools for Sales, HR, and the CX team, including a customer onboarding system with automated email reminders, a batch account creation system, and a lead-tracking reporter, enhancing team velocity."
+      ],
+      "techStack": [
+        "Java",
+        "TypeScript",
+        "GCP",
+        "Bootstrap",
+        "Spring Boot",
+        "React",
+        "JUnit",
+        "Mockito",
+        "Microsoft SQL Server",
+        "MariaDB",
+        "Docker",
+        "Markdown",
+        "Bash",
+        "Gradle",
+        "Maven",
+        "GitHub Actions",
+        "ESLint",
+        "On-Prem",
+        "Freemarker",
+        "Stored Procedures",
+        "MyBatis",
+        "Thymeleaf",
+        "Quarkus",
+        "Spring Security",
+        "Spring Shell",
+        "Spring Data",
+        "Hetzner",
+        "IronPdf",
+        "eAutomate",
+        "Confluence",
+        "Jest",
+        "Stripe",
+        "Cloudflare"
+      ]
+    },
+    {
       "company": "Ferris State University",
       "website": "https://ferris.edu",
       "jobTitle": "Research Assistant",
@@ -13,20 +62,29 @@
         "Implemented automated CI/CD pipelines, strict code-styling, detailed documentation, and gave regular progress demos to university stakeholders.",
         "Researched top educational AI tooling like ChatGPT Study Mode, Flint, SocraticQ, and other innovative AI tools to determine what features to implement in Ferrell.",
         "Experimented with a variety of existing AI tooling for capabilities such as JetBrains AI, Cursor, and Antigravity with models such as Claude 4.5 Sonnet, GPT-5.2 Codex, and Gemini 3 Pro."
-      ]
-    },
-    {
-      "company": "AD Solutions",
-      "website": "https://myadsusa.com",
-      "jobTitle": "Software Engineer",
-      "startDate": "2024-6-1",
-      "endDate": null,
-      "description": [
-        "Owned the end-to-end project lifecycle after securing a solo contract, automating the entire software delivery process by architecting a multi-stage CI/CD pipeline with GitHub Actions for testing, Docker builds, and secure, one-click deployments.",
-        "Engineered a secure internal portal using React, TypeScript, and Bootstrap as well as a customer masquerade feature that reduced support resolution times.",
-        "Designed and implemented a new, normalized database schema from the ground up to enhance the platform scalability from the existing few thousand customers to much, much more.",
-        "Developed a high-performance payment automation that processes complex transactions across 20+ tables in-real-time, eliminating manual accounting intervention and saving dozens of hours per month.",
-        "Created cross-departmental automation tools for Sales, HR, and the CX team, including a customer onboarding system with automated email reminders, a batch account creation system, and a lead-tracking reporter, enhancing team velocity."
+      ],
+      "techStack": [
+        "Java",
+        "TypeScript",
+        "AWS",
+        "Tailwind CSS",
+        "Spring Boot",
+        "React",
+        "Spring AI",
+        "JUnit",
+        "PostgreSQL",
+        "Docker",
+        "Markdown",
+        "Bash",
+        "AWS Bedrock",
+        "Gradle",
+        "GitHub Actions",
+        "Shiki",
+        "Visual Studio Code",
+        "ESLint",
+        "ESBuild",
+        "Javadocs",
+        "TSDocs"
       ]
     },
     {
@@ -41,6 +99,20 @@
         "Implemented comprehensive i18n (English and Arabic) for international reach, and customized the PayloadCMS admin dashboard to streamline book creation and content management.",
         "Containerized the application stack using Docker and Docker Compose, ensuring parity and reliability across development and production environments.",
         "Managed product direction and feature prioritization by leading weekly progress demos and strategy syncs with key stakeholders."
+      ],
+      "techStack": [
+        "TypeScript",
+        "Tailwind CSS",
+        "React",
+        "PostgreSQL",
+        "Docker",
+        "Markdown",
+        "Next.js",
+        "Node.js",
+        "PayloadCMS",
+        "OpenRouter",
+        "Replicate",
+        "Huggingface"
       ]
     },
     {
@@ -52,6 +124,27 @@
       "description": [
         "Engineered the core backend for an industry-first billing portal by designing a Spring Boot application with MariaDB database and integrating with a massive, undocumented ERP system by creating at least a dozen RESTful APIs.",
         "Developed key frontend components using React and TypeScript, including secure login, payment, and autopay UIs, while also driving project velocity by managing the team's agile workflow and issue tracking on GitHub."
+      ],
+      "techStack": [
+        "Java",
+        "TypeScript",
+        "Bootstrap",
+        "Spring Boot",
+        "React",
+        "Microsoft SQL Server",
+        "MariaDB",
+        "Docker",
+        "Markdown",
+        "Maven",
+        "Freemarker",
+        "MyBatis",
+        "Thymeleaf",
+        "Quarkus",
+        "Spring Security",
+        "Spring Data",
+        "IronPdf",
+        "eAutomate",
+        "Stripe"
       ]
     }
   ]
