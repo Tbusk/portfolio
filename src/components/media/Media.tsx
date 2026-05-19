@@ -2,10 +2,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
 interface MediaProps {
-    items: string[];
+    items: MediaItem[];
+}
+
+export interface MediaItem {
+    image: string;
+    mode: string;
 }
 
 export default function Media(props: MediaProps) {
+
+    const darkmode: boolean = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     return (
         <div>
@@ -15,17 +22,23 @@ export default function Media(props: MediaProps) {
             </div>
 
             <Swiper
-                modules={[Navigation, Pagination]}
+                modules={[Pagination, Navigation]}
                 slidesPerView={1}
-                spaceBetween={50}
                 loop={true}
-                navigation
+                centeredSlidesBounds={true}
+                centeredSlides={false}
                 pagination={{clickable: true}}
-                className="py-3 md:h-96 h-full w-full"
+                navigation
+                className="md:h-120 md:max-w-208 border-2 rounded-xl border-(--lightmode-border-color) dark:border-(--darkmode-border-color) bg-(--lightmode-background-color-secondary) dark:bg-(--darkmode-background-color)"
+                style={{margin: 0}}
             >
-                {props.items.map((item, index) => (
-                    <SwiperSlide key={index} className="flex items-center justify-center">
-                        <img src={item} alt={`Media ${index + 1}`} className="h-full w-auto object-contain"/>
+                {props.items && props.items.length > 0 && darkmode ? props.items.filter(item => darkmode && item.mode === "dark").map((item, index) => (
+                    <SwiperSlide key={index}>
+                        <img src={item.image} alt={`Media ${index + 1}`} className="h-full w-auto object-contain"/>
+                    </SwiperSlide>
+                )) : props.items.filter(item => !darkmode && item.mode === "light").map((item, index) => (
+                    <SwiperSlide key={index}>
+                        <img src={item.image} alt={`Media ${index + 1}`} className="h-full w-auto object-contain"/>
                     </SwiperSlide>
                 ))}
             </Swiper>

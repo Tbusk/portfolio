@@ -32,3 +32,13 @@ html,body {
     --darkmode-pill-background-color: #364153;
     --lightmode-pill-background-color: #e5e7eb;
 }
+
+.swiper-button-next, .swiper-button-prev {
+    /* Same as accent color */
+    color: #5294e2;
+}
+
+.swiper-pagination-bullet-active {
+    /* Same as accent color */
+    background-color: #5294e2;
+}

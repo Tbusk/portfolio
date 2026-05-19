@@ -1,4 +1,4 @@
-import Media from "../media/Media.tsx";
+import Media, { type MediaItem } from "../media/Media.tsx";
 import SubSectionTitle from "../common/SubSectionTitle.tsx";
 import PillsComponent from "../common/PillsComponent.tsx";
 import ViewButton from "../common/ViewButton.tsx";
@@ -10,7 +10,7 @@ export interface ProjectProps {
     metrics?: string[];
     techStack: string[];
     tags?: string[];
-    media?: string[];
+    media?: MediaItem[];
 }
 
 export default function Project(props: ProjectProps) {
@@ -38,12 +38,9 @@ export default function Project(props: ProjectProps) {
                 <Media items={props.media}/>
             )}
 
-
-            {props.link ?
+            {props.link && (
                 <ViewButton link={props.link} />
-                :
-                <></>
-            }
+            )}
         </div>
     );
 }
