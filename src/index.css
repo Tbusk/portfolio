@@ -38,6 +38,11 @@ html,body {
     color: #5294e2;
 }
 
+.swiper-pagination-bullet {
+    /* Same as accent hover color */
+    background-color: #4781c7;
+}
+
 .swiper-pagination-bullet-active {
     /* Same as accent color */
     background-color: #5294e2;
