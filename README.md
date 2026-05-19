@@ -10,8 +10,8 @@ It also is a template you can use to create your own portfolio.
 
 ### Preview
 
-![Portfolio Screenshot](public/assets/images/darkmode/darkmode-portfolio.png)
-![Portfolio Screenshot](public/assets/images/lightmode/lightmode-portfolio.png)
+![Portfolio Screenshot](public/assets/images/darkmode/darkmode-portfolio-home.png)
+![Portfolio Screenshot](public/assets/images/lightmode/lightmode-portfolio-home.png)
 
 ## Getting Started
 

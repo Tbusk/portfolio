@@ -33,11 +33,35 @@
           "mode": "light"
         },
         {
+          "image": "/assets/images/lightmode/vala-ide-plugin-linter-lightmode.png",
+          "mode": "light"
+        },
+        {
+          "image": "/assets/images/lightmode/vala-ide-plugin-colorscheme-lightmode.png",
+          "mode": "light"
+        },
+        {
+          "image": "/assets/images/lightmode/vala-ide-plugin-formatter-lightmode.png",
+          "mode": "light"
+        },
+        {
           "image": "/assets/images/darkmode/vala-ide-plugin-code-darkmode.png",
           "mode": "dark"
         },
         {
           "image": "/assets/images/darkmode/vala-ide-plugin-hover-darkmode.png",
+          "mode": "dark"
+        },
+        {
+          "image": "/assets/images/darkmode/vala-ide-plugin-linter-darkmode.png",
+          "mode": "dark"
+        },
+        {
+          "image": "/assets/images/darkmode/vala-ide-plugin-colorscheme-darkmode.png",
+          "mode": "dark"
+        },
+        {
+          "image": "/assets/images/darkmode/vala-ide-plugin-formatter-darkmode.png",
           "mode": "dark"
         }
       ],
@@ -86,11 +110,43 @@
       ],
       "media": [
         {
-          "image": "/assets/images/lightmode/lightmode-portfolio.png",
+          "image": "/assets/images/lightmode/lightmode-portfolio-home.png",
           "mode": "light"
         },
         {
-          "image": "/assets/images/darkmode/darkmode-portfolio.png",
+          "image": "/assets/images/lightmode/lightmode-portfolio-experience.png",
+          "mode": "light"
+        },
+        {
+          "image": "/assets/images/lightmode/lightmode-portfolio-education.png",
+          "mode": "light"
+        },
+        {
+          "image": "/assets/images/lightmode/lightmode-portfolio-projects.png",
+          "mode": "light"
+        },
+        {
+          "image": "/assets/images/lightmode/lightmode-portfolio-opensource.png",
+          "mode": "light"
+        },
+        {
+          "image": "/assets/images/darkmode/darkmode-portfolio-home.png",
+          "mode": "dark"
+        },
+        {
+          "image": "/assets/images/darkmode/darkmode-portfolio-experience.png",
+          "mode": "dark"
+        },
+        {
+          "image": "/assets/images/darkmode/darkmode-portfolio-education.png",
+          "mode": "dark"
+        },
+        {
+          "image": "/assets/images/darkmode/darkmode-portfolio-projects.png",
+          "mode": "dark"
+        },
+        {
+          "image": "/assets/images/darkmode/darkmode-portfolio-opensource.png",
           "mode": "dark"
         }
       ],
