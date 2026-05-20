@@ -12,7 +12,7 @@ export default function HeaderListItem(props: HeaderListItemProps) {
 
     return (
         <li className={`hidden sm:block text-xl ${highlight ? ' border-b-4 pb-7 border-(--accent-color) font-bold dark:text-(--darkmode-text-color-primary)' : ' pb-8 text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) hover:text-(--lightmode-text-color-primary) dark:hover:text-(--darkmode-text-color-secondary)'}`}>
-            <a href={`#/${props.id ? props.id : ''}`}>
+            <a href={`#/${props.id ? props.id : ''}`} aria-current={highlight ? 'page' : undefined}>
                 {props.name}
             </a>
         </li>

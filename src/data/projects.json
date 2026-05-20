@@ -26,43 +26,53 @@
       "media": [
         {
           "image": "/assets/images/lightmode/vala-ide-plugin-code-lightmode.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "Vala JetBrains IDE plugin viewing code with a light theme"
         },
         {
           "image": "/assets/images/lightmode/vala-ide-plugin-hover-lightmode.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "Vala JetBrains IDE plugin using the documentation popup via hover feature with a light theme"
         },
         {
           "image": "/assets/images/lightmode/vala-ide-plugin-linter-lightmode.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "Vala JetBrains IDE plugin using the Vala linter integration with a light theme"
         },
         {
           "image": "/assets/images/lightmode/vala-ide-plugin-colorscheme-lightmode.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "Vala JetBrains IDE plugin on the color scheme settings page with a light theme"
         },
         {
           "image": "/assets/images/lightmode/vala-ide-plugin-formatter-lightmode.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "Vala JetBrains IDE plugin on the formatter page with a light theme"
         },
         {
           "image": "/assets/images/darkmode/vala-ide-plugin-code-darkmode.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "Vala JetBrains IDE plugin viewing code with a dark theme"
         },
         {
           "image": "/assets/images/darkmode/vala-ide-plugin-hover-darkmode.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "Vala JetBrains IDE plugin using the documentation popup via hover feature with a dark theme"
         },
         {
           "image": "/assets/images/darkmode/vala-ide-plugin-linter-darkmode.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "Vala JetBrains IDE plugin using the Vala linter integration with a dark theme"
         },
         {
           "image": "/assets/images/darkmode/vala-ide-plugin-colorscheme-darkmode.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "Vala JetBrains IDE plugin on the color scheme settings page with a dark theme"
         },
         {
           "image": "/assets/images/darkmode/vala-ide-plugin-formatter-darkmode.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "Vala JetBrains IDE plugin on the formatter page with a dark theme"
         }
       ],
       "link": "https://github.com/vala-lang/vala-jetbrains"
@@ -115,43 +125,53 @@
       "media": [
         {
           "image": "/assets/images/lightmode/lightmode-portfolio-home.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "My portfolio home page with light mode enabled"
         },
         {
           "image": "/assets/images/lightmode/lightmode-portfolio-experience.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "My portfolio experience page with light mode enabled"
         },
         {
           "image": "/assets/images/lightmode/lightmode-portfolio-education.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "My portfolio education page with light mode enabled"
         },
         {
           "image": "/assets/images/lightmode/lightmode-portfolio-projects.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "My portfolio projects page with light mode enabled"
         },
         {
           "image": "/assets/images/lightmode/lightmode-portfolio-opensource.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "My portfolio open source page with light mode enabled"
         },
         {
           "image": "/assets/images/darkmode/darkmode-portfolio-home.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "My portfolio home page with dark mode enabled"
         },
         {
           "image": "/assets/images/darkmode/darkmode-portfolio-experience.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "My portfolio experience page with dark mode enabled"
         },
         {
           "image": "/assets/images/darkmode/darkmode-portfolio-education.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "My portfolio education page with dark mode enabled"
         },
         {
           "image": "/assets/images/darkmode/darkmode-portfolio-projects.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "My portfolio projects page with dark mode enabled"
         },
         {
           "image": "/assets/images/darkmode/darkmode-portfolio-opensource.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "My portfolio open source page with dark mode enabled"
         }
       ],
       "link": "https://github.com/Tbusk/portfolio"
@@ -169,11 +189,13 @@
       "media": [
         {
           "image": "/assets/images/lightmode/resume_lightmode.png",
-          "mode": "light"
+          "mode": "light",
+          "alt": "My resume template with light mode enabled"
         },
         {
           "image": "/assets/images/darkmode/resume_darkmode.png",
-          "mode": "dark"
+          "mode": "dark",
+          "alt": "My resume template with dark mode enabled"
         }
       ],
       "link": "https://github.com/Tbusk/resume"

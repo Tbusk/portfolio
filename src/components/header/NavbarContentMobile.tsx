@@ -22,9 +22,9 @@ export default function NavbarContentMobile() {
 
             {isMenuOpen && (
                 <div className="h-screen w-screen bg-(--lightmode-background-color) dark:bg-(--darkmode-background-color)">
-                    <div className="text-2xl px-4 font-bold pb-3 py-4 dark:text-(--darkmode-text-color-primary)">
+                    <h3 className="text-2xl px-4 font-bold pb-3 py-4 dark:text-(--darkmode-text-color-primary)">
                         Pages
-                    </div>
+                    </h3>
                     <ul className="flex-row justify-center">
                         <HeaderListItemMobile name="Home" id="" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={0}/>
                         <HeaderListItemMobile name="Experience" id="experience" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={1}/>

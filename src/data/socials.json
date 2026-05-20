@@ -4,7 +4,7 @@
       "name": "GitHub",
       "link": "https://github.com/Tbusk",
       "logo": "/assets/icons/lightmode/github_icon_light.svg",
-      "logoAlt": "GitHub Icon",
+      "logoAlt": "GitHub logo",
       "imageWidth": 42,
       "imageHeight": 42,
       "mode": "light"
@@ -13,25 +13,25 @@
       "name": "GitHub",
       "link": "https://github.com/Tbusk",
       "logo": "/assets/icons/darkmode/github_icon_dark.svg",
-      "logoAlt": "GitHub Icon",
+      "logoAlt": "GitHub logo",
       "imageWidth": 42,
       "imageHeight": 42,
       "mode": "dark"
     },
     {
       "name": "LinkedIn",
-      "link": "https://linkedin.com/in/trevor-busk/",
+      "link": "https://linkedin.com/in/trevor-busk",
       "logo": "/assets/icons/lightmode/linkedin_icon_light.svg",
-      "logoAlt": "LinkedIn Icon",
+      "logoAlt": "LinkedIn logo",
       "imageWidth": 36,
       "imageHeight": 36,
       "mode": "light"
     },
     {
       "name": "LinkedIn",
-      "link": "https://linkedin.com/in/trevor-busk/",
+      "link": "https://linkedin.com/in/trevor-busk",
       "logo": "/assets/icons/darkmode/linkedin_icon_dark.svg",
-      "logoAlt": "LinkedIn Icon",
+      "logoAlt": "LinkedIn logo",
       "imageWidth": 36,
       "imageHeight": 36,
       "mode": "dark"
@@ -40,7 +40,7 @@
       "name": "Resume",
       "link": "https://github.com/Tbusk/resume/blob/main/Resume.pdf",
       "logo": "/assets/icons/lightmode/document_icon_light.svg",
-      "logoAlt": "Resume Icon",
+      "logoAlt": "Resume logo",
       "imageWidth": 42,
       "imageHeight": 42,
       "mode": "light"
@@ -49,7 +49,7 @@
       "name": "Resume",
       "link": "https://github.com/Tbusk/resume/blob/main/Resume.pdf",
       "logo": "/assets/icons/darkmode/document_icon_dark.svg",
-      "logoAlt": "Resume Icon",
+      "logoAlt": "Resume document image",
       "imageWidth": 42,
       "imageHeight": 42,
       "mode": "dark"

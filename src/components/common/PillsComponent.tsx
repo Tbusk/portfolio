@@ -8,9 +8,9 @@ interface PillsComponentProps {
 export default function PillsComponent(props: PillsComponentProps) {
     return (
         <div className="pt-2 pb-3">
-            <div className="font-bold text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) pb-3">
+            <h3 className="font-bold text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) pb-3">
                 {props.name}
-            </div>
+            </h3>
             <Pills items={props.items} />
         </div>
     )

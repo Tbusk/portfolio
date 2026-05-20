@@ -7,12 +7,12 @@ import ShowHideButton from "../common/ShowHideButton.tsx";
 
 export interface ExperienceItemProps {
     company: string;
-    website?: string;
+    website: string;
     jobTitle: string;
     description: string[];
     startDate: string;
     techStack?: string[];
-    endDate: string|null;
+    endDate: string | null;
     media?: MediaItem[];
 }
 
@@ -27,41 +27,49 @@ export default function ExperienceItem(props: ExperienceItemProps) {
 
             <SubSectionTitle name={props.jobTitle}/>
 
-            <div className="text-md dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary) pb-2">
-                {props.website ? (
-                    <a rel="noreferrer" target="_blank" className="underline dark:hover:text-(--darkmode-text-color-secondary) hover:text-(--lightmode-text-color-secondary)" href={props.website}>
-                        {props.company}
-                    </a>
-                ) : <div className="">{props.company}</div>}
+            <div className="pb-2">
+                <a
+                    rel="noreferrer"
+                    target="_blank"
+                    className="text-md underline dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary) dark:hover:text-(--darkmode-text-color-secondary) hover:text-(--lightmode-text-color-secondary)"
+                    href={props.website}
+                >
+                    {props.company}
+                    <span className="sr-only">
+                        (opens in a new tab)
+                    </span>
+                </a>
             </div>
 
             {props.techStack && props.techStack.length > 0 && (
                 <PillsComponent name="Tech Stack" items={props.techStack}/>
             )}
 
-            <div className={`font-bold text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) pb-1 ${props.techStack && props.techStack.length > 0 ? 'pt-1' : ''}`}>
-                Summary
-            </div>
+            <div>
+                <h3 className={`text-md font-bold text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) pb-1 ${props.techStack && props.techStack.length > 0 ? 'pt-1' : ''}`}>
+                    Summary
+                </h3>
 
-            <ul className="list-disc pl-4 dark:text-(--darkmode-text-color-primary)">
-                {props.description && props.description.slice(0, (props.description.length > 5 ? 5 : props.description.length)).map((content, index) => (
-                    <li className="pl-2 py-1.5" key={index}>
-                        {content}
-                    </li>
-                ))}
-                {props.description.length > 5 && showAll && props.description.slice(5, props.description.length).map((content, index) => (
-                    <li className="pl-2 py-1.5" key={index}>
-                        {content}
-                    </li>
-                ))}
-            </ul>
+                <ul className="list-disc pl-4 dark:text-(--darkmode-text-color-primary)">
+                    {props.description && props.description.slice(0, (props.description.length > 5 ? 5 : props.description.length)).map((content, index) => (
+                        <li className="pl-2 py-1.5" key={index}>
+                            {content}
+                        </li>
+                    ))}
+                    {props.description.length > 5 && showAll && props.description.slice(5, props.description.length).map((content, index) => (
+                        <li className="pl-2 py-1.5" key={index}>
+                            {content}
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
             {props.description.length > 5 && (
                 <>
                     {!showAll ? (
-                        <ShowHideButton setShowAll={setShowAll} showAll={true} description="Expand" />
+                        <ShowHideButton setShowAll={setShowAll} showAll={true} description="Expand"/>
                     ) : (
-                        <ShowHideButton setShowAll={setShowAll} showAll={false} description="Hide" />
+                        <ShowHideButton setShowAll={setShowAll} showAll={false} description="Hide"/>
                     )}
                 </>
             )}
