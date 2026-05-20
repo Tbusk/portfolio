@@ -7,7 +7,17 @@ export default function DateRange(props: DateRangeProps) {
 
     return (
         <div className="text-md pb-2 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-tertiary)">
-            {`${getDateSection(props.startDate)} - ${getDateSection(props.endDate)}`}
+            <time datetime={props.startDate} >
+                {getDateSection(props.startDate)}
+            </time>
+            {` - `}
+            {props.endDate ? (
+                <time datetime={props.endDate}>
+                    {getDateSection(props.endDate)}
+                </time>
+            ) : (
+                getDateSection(props.endDate)
+            )}
         </div>
     );
 }
