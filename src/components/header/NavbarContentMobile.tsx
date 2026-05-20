@@ -31,6 +31,7 @@ export default function NavbarContentMobile() {
                         <HeaderListItemMobile name="Education" id="education" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={2}/>
                         <HeaderListItemMobile name="Projects" id="projects" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={3}/>
                         <HeaderListItemMobile name="Open Source" id="open-source" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={4}/>
+                        <HeaderListItemMobile name="Contact" id="contact-me" isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} key={5}/>
                     </ul>
                 </div>
             )}

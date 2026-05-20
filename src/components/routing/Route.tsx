@@ -5,6 +5,7 @@ import Projects from "../projects/Projects.tsx";
 import OpenSourceContributions from "../open_source/OpenSourceContributions.tsx";
 import NotFound from "../not_found/NotFound.tsx";
 import type { JSX } from "preact";
+import Contact from "../contact/Contact.tsx";
 
 export interface RouteProps {
     path: string | undefined;
@@ -43,6 +44,12 @@ export const routes : RouteProps[] = [
         hasHeading: true,
         title: "Open Source",
         component: <OpenSourceContributions/>
+    },
+    {
+        path: "/contact-me",
+        hasHeading: true,
+        title: "Contact",
+        component: <Contact/>
     },
     {
         path: undefined,

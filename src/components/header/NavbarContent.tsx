@@ -8,6 +8,7 @@ export default function NavbarContent() {
             <HeaderListItem name="Education" id="education" key={2}/>
             <HeaderListItem name="Projects" id="projects" key={3}/>
             <HeaderListItem name="Open Source" id="open-source" key={4}/>
+            <HeaderListItem name="Contact" id="contact-me" key={5}/>
         </ul>
     );
 }
