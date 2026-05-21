@@ -31,7 +31,7 @@ It also is a template you can use to create your own portfolio.
 
 ### Customization
 
-Update the content in the json files in `src/data` with your own information
+Update the content in the json files in `src/data` and head section in `index.html` with your own information
 
 ## Deployment
 
