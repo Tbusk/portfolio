@@ -7,25 +7,32 @@
       "startDate": "2024-6-1",
       "endDate": null,
       "description": [
-        "Deployed full-stack billing portal application using hybrid-deployment strategy with GCP and on-premises VM.",
-        "Created automation between the ERP, Stripe, and the billing portal to record payments towards customer's balances, saving countless hours of manual accounting activity per month.",
-        "Created an automation for HR to reduce manual work involved in the hiring process by syncing documents and preparing various workflows.",
-        "Created automated deployment pipeline via GitHub Actions, GCP, Docker, and a linux VM.",
-        "Improved billing portal test coverage greatly, adding thousands of test cases to prevent regression and validate feature functionality.",
-        "Designed and implemented internal-facing CMS extension for the billing portal for staff of varying needs such as sales, management, IT, and more.",
-        "Created a batch-processing system for onboarding hundreds to thousands of customers at any point in time and tracking status and sending notifications during the onboarding process.",
-        "Created an automation for Sales to send weekly reports to management on the state of the sales boards.",
-        "Redesigned and extended automated invoice generation to include pay by mail page, how to pay section, balance summary, and added numerous items to pages such as sales orders, reference numbers, rate-based usage charges, and more.",
-        "Integrated helpdesk widget on portal allowing customers to interact with staff and look at articles, FAQs, and more.",
-        "Implemented a custom role-based access control (RBAC) for the billing portal.",
-        "Created numerous environments for varying use-cases, such as a development, dockerized development, testing, CI/CD, and production environments.",
-        "Set up auto-backup process for the billing portal's database via bash, GCP, and cron.",
-        "Created automation to validate and add printer meter readings to the ERP software for many printers sent by printers via email automatically.",
-        "Extended the billing portal to include a wallet page for managing autopay and payment methods, invoice history page for viewing past invoices, billing info component for showing billing period information, additional metrics from the ERP to show on billable sections in billing components, additional payment type support, and more.",
-        "Set up an automation in Google Sheets via GCP and GCP SDK to automatically share onboarding status information with staff from the portal.",
-        "Redesigned billing portal's database to be better normalized and extensible from one table to over a dozen.",
-        "Added interesting 'mock' feature allowing staff of adequate privileges to see what customer's see, minus the ability to take any action on the customer's behalf.",
-        "Set up observability, logging, secret management, and more for the billing portal."
+        "Built a payment reconciliation automation between Stripe, the ERP, and the billing portal using Java, webhooks and SQL Server stored procedures, eliminating up to 3 days per month of manual accounting data entry and processing 150+ transactions autonomously.",
+        "Built an HR recruiting pipeline automation syncing assessment reports and routing applicants across 50+ job postings using Java, Quarkus, GCP, and webhooks, eliminating up to a day per month of manual HR data entry.",
+        "Engineered a batch onboarding system capable of onboarding any number of customers on any schedule using MariaDB, Google Sheets, and Java, cutting onboarding time from days to minutes and onboarding over 600 businesses.",
+        "Built a daily-updated Google Sheets onboarding status tracker from billing portal data for the customer support team, eliminating the need for the development team manually creating reports for inquiries and so the team will always have up-to-date information on who they need to reach out to.",
+        "Built a weekly sales reporting automation for five teams using Spring Boot, Java, and cron, saving 1–3 hours per week for the manager by replacing manual data compilation with an automated, error-free weekly report.",
+        "Built an automated printer meter entry pipeline, eliminating the need for Zapier and an external vendor, by parsing email meter readings and inserting validated entries directly into the ERP via SQL Server stored procedures for a 12+ printers.",
+        "Established a CI/CD pipeline with GitHub Actions, GCP, and Docker that reduced deployment times from an hour of manual activity to a single approval, for up to a dozen releases per month.",
+        "Created multiple isolated environments (dev, dockerized dev, testing, CI/CD, production), enabling consistent setup in minutes and eliminating platform-specific bugs across Linux, Mac OS, and Linux.",
+        "Set up an automated MariaDB database backup process with Bash, GCP, and cron, ensuring data integrity, quick recovery, and multiple redundancy fail safes.",
+        "Redesigned the billing portal's MariaDB database from one table to over twelve normalized tables, improving data integrity, query performance, and extensibility while enabling features like RBAC and batch onboarding.",
+        "Deployed the company's full-stack billing portal (React & Spring Boot) into production using a hybrid GCP and on-premises strategy, launching the business's first self-service billing experience for ~650 businesses.",
+        "Redesigned the invoice PDF to include a pay-by-mail tear-off page, redesigned the summary page, and extended ERP content, generating ~2,700 invoices for ~650 businesses while enabling online, mail, and split-document delivery options.",
+        "Built customer-facing wallet pages for payment method management, autopay management, invoice history, and billing insights using Spring Boot, Java, Stripe, TypeScript, React, and Bootstrap, serving ~650 businesses and enabling ~100 autopay enrollments.",
+        "Integrated Intercom into the billing portal, giving customers in-app access to help articles, FAQs, and staff chat without leaving the platform, improving the support experience from the email/phone-only model.",
+        "Designed and implemented a custom RBAC system with ~10 roles and ~50+ permissions, enabling the company to scale from a limited number of roles to a flexible, permission-based access model updatable in the CMS.",
+        "Built a sales data syncing automation for a lead-tracking platform using Spring Boot, Java, and AOP, saving the sales team hours of repetitive data entry per month with expansions planned.",
+        "Built a CLI-based database query utility using Spring Shell, Java, GCP, and SQL Server, allowing developers without direct database access to run select queries and export reports.",
+        "Built an email application to send targeted customer communications using production data and customizable templates via Spring Boot and Java, cutting mass-emailing time from hours to minutes per campaign.",
+        "Built a reusable email footer template using Freemarker, Bootstrap, and Thymeleaf, ensuring all billing platform emails share a consistent, recognizable footer to customers.",
+        "Converted separate frontend and backend repos into a unified monorepo for the billing platform, simplifying CI/CD, reducing PR overhead, and enabling future expansion added as modules.",
+        "Added frontend source code obfuscation and minification to the billing portal, improving load performance and protecting proprietary code from competitors.",
+        "Designed and implemented an internal CMS extension to the billing portal using React, Spring Boot, MariaDB, and SQL Server, enabling staff across departments to manage the portal without the development team's involvement.",
+        "Added 1000+ tests using JUnit 5 and Mockito, increasing test coverage of the backend by 70%, preventing regression and enabling more confident deployments.",
+        "Configured nginx as a production reverse proxy with TLS, Let's Encrypt, and request mirroring for the billing portal, securing and upgrading all customer-facing traffic.",
+        "Automated certificate renewal via Bash, cron, and Let's Encrypt, eliminating manual certificate rotation and ensuring uninterrupted HTTPS for the billing portal.",
+        "Implemented Caffeine in-memory caching for ERP data in the billing portal, reducing SQL Server load across ~650 customers by serving most data from the cache while keeping fresh via billing-cycle and payment-event invalidation."
       ],
       "techStack": [
         "Java",
@@ -39,6 +46,7 @@
         "Docker",
         "Stripe",
         "Cloudflare",
+        "GitHub",
         "GitHub Actions",
         "Hetzner",
         "Bootstrap",
@@ -72,11 +80,13 @@
       "startDate": "2026-1-12",
       "endDate": "2026-5-10",
       "description": [
-        "Created a custom LLM-powered Visual Studio Code extension, called Ferrell, that is designed to support software development students.",
-        "Built the extension from scratch, connecting a modern webview frontend to a dockerized backend and database hosted on AWS.",
-        "Implemented automated CI/CD pipelines, strict code-styling, detailed documentation, and gave regular progress demos to university stakeholders.",
-        "Presented the architecture and capabilities to a diverse audience as a featured speaker at Ferris AI Day.",
-        "Researched top educational AI tooling like ChatGPT Study Mode, Flint, SocraticQ, and other tools to determine what features to implement."
+        "Built Ferrell, a custom LLM-powered VS Code extension with a React/TypeScript frontend and a Java/Spring Boot backend on AWS, providing sudents with code reviews, study tools, and socratic mentorship.",
+        "Added global state persistence and cross-IDE support (VS Code, Cursor, Antigravity, VSCodium) to Ferrell, allowing chat sessions to survive window switching and closing.",
+        "Implemented CI/CD pipelines for testing, documentation, Docker image builds, code quality, and VSIX extension packaging using GitHub Actions, Docker, and AWS.",
+        "Integrated Javadocs, TSDocs, and Swagger/OpenAPI documentation into the Ferrell backend and frontend, fully documenting the project and enabling future expansion.",
+        "Researched and evaluated top educational and industry AI tools (ChatGPT Study Mode, Flint K-12, Harvard's SocratiQ, JetBrains AI, Cursor, Antigravity) to identify feature gaps and inform the development of a custom Socratic LLM tool.",
+        "Presented as a featured speaker at Ferris AI Day, demonstrating a custom LLM-powered VS Code extension's architecture and features to a diverse audience of students, faculty, and administrators.",
+        "Engineered a custom markdown prompt architecture that embeds code file content into the LLM user prompt, bypassing AWS Bedrock's file type and count limitations to support ~60 code files and ~4 image/pdfs across ~400 file types."
       ],
       "techStack": [
         "Java",
@@ -87,6 +97,7 @@
         "SQL",
         "PostgreSQL",
         "Docker",
+        "GitHub",
         "GitHub Actions",
         "Tailwind CSS",
         "AWS Bedrock",
@@ -104,11 +115,9 @@
       "startDate": "2025-10-12",
       "endDate": "2026-4-1",
       "description": [
-        "Working with the founder of a Kuwait-based software consultancy company, I built a full-stack eCommerce web application for selling, creating, and distributing personalized children's books using TypeScript, React, PayloadCMS, Tailwind CSS, Node.js, Next.js, Docker, and PostgreSQL with various ML solutions for feature-based personalization.",
-        "Researched and evaluated dozens of ML models and platforms for image generation, mixing, face-swapping, and feature alteration to power the book personalization engine.",
-        "Implemented comprehensive i18n (English and Arabic) for international reach, and customized the PayloadCMS admin dashboard to streamline book creation and content management.",
-        "Containerized the application stack using Docker and Docker Compose, ensuring parity and reliability across development and production environments.",
-        "Managed product direction and feature prioritization by leading weekly progress demos and strategy syncs with key stakeholders."
+        "Built the foundations of a full-stack international eCommerce platform for personalized children's books using TypeScript, React, Next.js, PayloadCMS, PostgreSQL, and Docker, with i18n support for English and Arabic.",
+        "Designed PayloadCMS collections and page models for personalized children's books, storing per-page images, text, prompts, and page code with previewing, enabling non-technical management of the entire book catalog.",
+        "Researched and tested dozens of image generation and feature-personalization ML models across platforms like GitHub, Huggingface, Replicate, OpenRouter, and Google, proving feasibilty of children personalization for illustrated books."
       ],
       "techStack": [
         "TypeScript",
@@ -123,7 +132,11 @@
         "PayloadCMS",
         "OpenRouter",
         "Replicate",
-        "Huggingface"
+        "Huggingface",
+        "GitHub",
+        "BitBucket",
+        "Python",
+        "Jira"
       ]
     },
     {
@@ -133,11 +146,14 @@
       "startDate": "2023-9-12",
       "endDate": "2024-5-12",
       "description": [
-        "Created the backend for a billing portal using Spring Boot, Spring Security, MS SQL Server, and MariaDB.",
-        "Managed project for team on GitHub, including organizing project, adding items to the backlog, doing code reviews, updating statuses, assigning issues, and more.",
-        "Created API-based integration with ERP software the company that provided the grant used, which was extremely large in size (e.g., thousands of tables, tens of thousands of columns, etc.) and undocumented.",
-        "Developed key frontend components using React and TypeScript, including secure login, payment, and autopay UIs.",
-        "Created an automated invoice generator using web technologies, IronPdf, and Thymeleaf."
+        "Developed the backend for a live billing portal using Spring Boot, Spring Security, MariaDB, Stripe, and a massive Microsoft SQL Server ERP (thousands of tables/columns/procedures).",
+        "Implemented Caffeine in-memory caching for ERP data pulls, reducing Microsoft SQL Server load by serving most data from cache with billing-cycle and event-driven invalidation.",
+        "Created an automated consolidated invoice generator using Bootstrap, IronPdf, and Thymeleaf that replaced the multi-invoice ERP documents with a single, unified monthly invoice per customer, greatly simplifying the experience and reducing billing confusion.",
+        "Created RESTful APIs for 10+ ERP domains (contracts, equipment, invoices, meter readings, service calls, taxes) and Stripe, abstracting a massive SQL Server ERP behind clean, well-documented endpoints for the frontend team.",
+        "Managed the team's complete Agile workflow on GitHub, creating user stories, organizing issues, maintaining the backlog, conducting code reviews, and coordinating with remote team members and external stakeholders on a 10 person team.",
+        "Built key customer-facing frontend components such as the login, payment processing, supplies, equipment, and servicing billables, and autopay UI using React, TypeScript, and RESTful APIs, delivering the core user-facing experience that became the production billing portal.",
+        "Set up a custom variable-payment autopay solution on top of Stripe, charging customers their balance up to a configurable limit, reducing manual payment actions and giving customers control over their autopay thresholds.",
+        "Created an admin utility for account creation and API documentation browsing using Thymeleaf templates with standard auth, enabling staff to create accounts and explore APIs without developer involvement."
       ],
       "techStack": [
         "Java",
@@ -157,8 +173,7 @@
         "Thymeleaf",
         "Spring Security",
         "Spring Data",
-        "IronPdf",
-        "eAutomate"
+        "IronPdf"
       ]
     }
   ]
