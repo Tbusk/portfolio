@@ -13,7 +13,7 @@ html,body {
     --lightmode-background-color: white;
     --lightmode-background-color-secondary: #f3f3f3;
     --lightmode-background-color-tertiary: #e5e5e5;
-    --darkmode-background-color: #0d0e11;
+    --darkmode-background-color: #0f1117;
     --darkmode-background-color-hover: black;
     /* Text */
     --lightmode-text-color-primary: black;
@@ -23,7 +23,7 @@ html,body {
     --darkmode-text-color-secondary: #d1d5dc;
     --darkmode-text-color-tertiary: #a3a7ac;
     /* Border */
-    --darkmode-border-color: #364153;
+    --darkmode-border-color: #262a34;
     --lightmode-border-color: #e5e7eb;
     /* Accents */
     --accent-color: #5294e2;
