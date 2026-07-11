@@ -209,6 +209,54 @@
         }
       ],
       "link": "https://github.com/Tbusk/resume"
+    },
+    {
+      "name": "LaTeX References Template",
+      "description": "Created a modular references template which I use.",
+      "tags": [
+        "Open Source",
+        "Template"
+      ],
+      "techStack": [
+        "LaTeX"
+      ],
+      "media": [
+        {
+          "image": "/assets/images/lightmode/references_lightmode.png",
+          "mode": "light",
+          "alt": "My references template with light mode enabled"
+        },
+        {
+          "image": "/assets/images/darkmode/references_darkmode.png",
+          "mode": "dark",
+          "alt": "My references template with dark mode enabled"
+        }
+      ],
+      "link": "https://github.com/Tbusk/references"
+    },
+    {
+      "name": "LaTeX Cover Letter Template",
+      "description": "Created a modular Cover Letter template which I use.",
+      "tags": [
+        "Open Source",
+        "Template"
+      ],
+      "techStack": [
+        "LaTeX"
+      ],
+      "media": [
+        {
+          "image": "/assets/images/lightmode/cover_letter_lightmode.png",
+          "mode": "light",
+          "alt": "My cover letter template with light mode enabled"
+        },
+        {
+          "image": "/assets/images/darkmode/cover_letter_darkmode.png",
+          "mode": "dark",
+          "alt": "My cover letter template with dark mode enabled"
+        }
+      ],
+      "link": "https://github.com/Tbusk/cover-letter"
     }
   ]
 }
