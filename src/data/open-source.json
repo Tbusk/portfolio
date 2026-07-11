@@ -5,6 +5,7 @@
       "link": "https://github.com/getsolus/packages",
       "description": "Package repository for the Solus Linux distribution",
       "content": [
+        "Packaged and maintain VSCodium, a popular privacy-focused Visual Studio Code derivative",
         "Packaged and maintain the Stripe CLI application, an app used for stripe development",
         "Packaged and maintain Vala Language Server, a language server for Vala",
         "Packaged and maintain Vala Lint, a linter for Vala",
