@@ -33,7 +33,8 @@
         "GitHub",
         "Bash",
         "Freemarker",
-        "Thymeleaf"
+        "Thymeleaf",
+        "Hibernate"
       ]
     },
     {
@@ -111,7 +112,8 @@
         "MariaDB",
         "Docker",
         "Stripe",
-        "Thymeleaf"
+        "Thymeleaf",
+        "Hibernate"
       ]
     }
   ]

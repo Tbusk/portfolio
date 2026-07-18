@@ -10,7 +10,7 @@
         "Live"
       ],
       "metrics": [
-        "15k Downloads",
+        "16k Downloads",
         "13 Stars"
       ],
       "techStack": [
@@ -76,6 +76,27 @@
         }
       ],
       "link": "https://github.com/vala-lang/vala-jetbrains"
+    },
+    {
+      "name": "Problem Tracker",
+      "description": "Creating a competitive programming and interview problem tracker utility to allow users to keep track of problems solved and metadata and get useful insights into what they should work on next and regarding their activity data.",
+      "tags": [
+        "Open Source"
+      ],
+      "techStack": [
+        "Java",
+        "Spring Boot",
+        "Oracle Database",
+        "Hibernate",
+        "Spring Cloud Gateway",
+        "Spring Cloud Config Server",
+        "Spring Cloud Netflix Eureka Client & Server",
+        "Spring Boot Actuator",
+        "Docker",
+        "Microservices",
+        "RESTful APIs"
+      ],
+      "link": "https://github.com/tbusk/problem-tracker"
     },
     {
       "name": "Warehouse Item Classification",

@@ -9,7 +9,9 @@
         "Packaged and maintain the Stripe CLI application, an app used for stripe development",
         "Packaged and maintain Vala Language Server, a language server for Vala",
         "Packaged and maintain Vala Lint, a linter for Vala",
-        "Packaged and maintain IVPN, a popular privacy-focused VPN client"
+        "Packaged and maintain IVPN, a popular privacy-focused VPN client",
+        "Packaged and maintain liboqs, a quantum resistant cryptography C library",
+        "Patched issue with callback with the Element matrix packaging"
       ]
     },
     {
