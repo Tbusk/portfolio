@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import { Fragment } from "react";
 
 interface MediaProps {
     items: MediaItem[];
@@ -17,9 +16,9 @@ export default function Media(props: MediaProps) {
     const darkmode: boolean = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     return (
-        <Fragment>
+        <div className="pb-4">
 
-            <h3 className="font-bold text-(--lightmode-text-color-primary) pt-2 pb-3 dark:text-(--darkmode-text-color-primary)">
+            <h3 className="font-bold text-(--lightmode-text-color-primary) pb-4 dark:text-(--darkmode-text-color-primary)">
                 Media
             </h3>
 
@@ -44,6 +43,6 @@ export default function Media(props: MediaProps) {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </Fragment>
+        </div>
     );
 }

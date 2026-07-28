@@ -30,7 +30,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
 
             <SubSectionTitle name={props.jobTitle}/>
 
-            <div className="pb-2">
+            <div className="pb-4">
                 <a
                     rel="noreferrer"
                     target="_blank"
@@ -49,27 +49,27 @@ export default function ExperienceItem(props: ExperienceItemProps) {
             )}
 
             <div>
-                <h3 className="text-md font-bold text-(--lightmode-text-color-primary) dark:text-(--darkmode-text-color-primary) pb-2">Summary</h3>
+                <h3 className="text-md font-bold text-(--lightmode-text-color-primary) dark:text-(--darkmode-text-color-primary) pb-4">Summary</h3>
 
-                <p className={`dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) ${props.description ? 'pb-3' : ''}`}>
+                <p className={`dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) ${props.description ? 'pb-4' : ''}`}>
                     {props.summary}
                 </p>
             </div>
 
             {props.description && (
-                <div>
-                    <h3 className={`text-md font-bold text-(--lightmode-text-color-primary) dark:text-(--darkmode-text-color-primary) pb-1 ${props.techStack && props.techStack.length > 0 ? 'pt-1' : ''}`}>
+                <div className="pb-4">
+                    <h3 className={`text-md font-bold text-(--lightmode-text-color-primary) dark:text-(--darkmode-text-color-primary) pb-4 ${props.techStack && props.techStack.length > 0 ? 'pt-1' : ''}`}>
                         Key Highlights
                     </h3>
 
-                    <ul className="list-disc pl-4 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
+                    <ul className="list-disc pl-4 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) pb-4">
                         {props.description.slice(0, (props.description.length > MAX_ITEMS ? MAX_ITEMS : props.description.length)).map((content, index) => (
-                            <li className="pl-2 py-1.5" key={index}>
+                            <li className="pl-2 py-1.5 last:pb-0" key={index}>
                                 {content}
                             </li>
                         ))}
                         {props.description.length > MAX_ITEMS && showAll && props.description.slice(MAX_ITEMS, props.description.length).map((content, index) => (
-                            <li className="pl-2 py-1.5" key={index}>
+                            <li className="pl-2 py-1.5 last:pb-0" key={index}>
                                 {content}
                             </li>
                         ))}
@@ -78,13 +78,13 @@ export default function ExperienceItem(props: ExperienceItemProps) {
             )}
 
             {props.description && props.description.length > MAX_ITEMS && (
-                <>
+                <div>
                     {!showAll ? (
                         <ShowHideButton setShowAll={setShowAll} showAll={true} description="Expand"/>
                     ) : (
                         <ShowHideButton setShowAll={setShowAll} showAll={false} description="Hide"/>
                     )}
-                </>
+                </div>
             )}
 
             {props.media && props.media.length > 0 && (

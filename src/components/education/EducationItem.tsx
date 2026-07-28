@@ -20,7 +20,7 @@ export default function EducationItem(props: EducationItemProps) {
 
             <SubSectionTitle name={props.name}/>
 
-            <div className="text-md pb-3 dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary)">
+            <div className="text-md pb-4 dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary)">
                 <a
                     rel="noreferrer"
                     target="_blank"

@@ -18,7 +18,7 @@ export default function Project(props: ProjectProps) {
         <>
             <SubSectionTitle name={props.name}/>
 
-            <div className="pb-2 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
+            <div className="pb-4 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
                 {props.description}
             </div>
 

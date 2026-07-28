@@ -6,7 +6,7 @@ interface PillsProps {
 
 export default function Pills(props: PillsProps) {
     return (
-        <ul className="flex flex-row flex-wrap gap-2">
+        <ul className="flex flex-row flex-wrap gap-2 pb-4">
             {props.items.map((item, index) => (
                 <Pill name={item} key={index} />
             ))}

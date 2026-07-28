@@ -15,18 +15,18 @@ export default function Contact() {
             </h2>
 
             {myInfo.collaborationStatement && (
-                <p className="text-lg dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) pb-6">
+                <p className="text-lg dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) pb-4">
                     {myInfo.collaborationStatement}
                 </p>
             )}
 
             {githubLink && (
                 <>
-                    <h3 className="text-lg font-bold dark:text-(--darkmode-text-color-primary) pb-2">
+                    <h3 className="text-lg font-bold dark:text-(--darkmode-text-color-primary) pb-4">
                         GitHub
                     </h3>
 
-                    <div className="pb-6">
+                    <div className="pb-4">
                         <a target="_blank" rel="noreferrer" href={githubLink.link} className="underline dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) dark:hover:text-(--darkmode-text-color-primary) hover:text-(--lightmode-text-color-primary)">
                             {githubLink.link.indexOf("//") != -1 ? githubLink.link.substring(githubLink.link.indexOf("//") + 2) : githubLink.link}
                             <span className="sr-only">(opens in a new tab)</span>
@@ -37,11 +37,11 @@ export default function Contact() {
 
             {linkedInLink && (
                 <>
-                    <h3 className="text-lg font-bold dark:text-(--darkmode-text-color-primary) pb-2">
+                    <h3 className="text-lg font-bold dark:text-(--darkmode-text-color-primary) pb-4">
                         LinkedIn
                     </h3>
 
-                    <div className="pb-6">
+                    <div className="pb-4">
                         <a target="_blank" rel="noreferrer" href={linkedInLink.link} className="underline dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) dark:hover:text-(--darkmode-text-color-primary) hover:text-(--lightmode-text-color-primary)">
                             {linkedInLink.link.indexOf("//") != -1 ? linkedInLink.link.substring(linkedInLink.link.indexOf("//") + 2) : linkedInLink.link}
                             <span className="sr-only">(opens in a new tab)</span>
@@ -52,11 +52,11 @@ export default function Contact() {
 
             {myInfo.emailAddress && (
                 <>
-                    <h3 className="text-lg font-bold dark:text-(--darkmode-text-color-primary) pb-2">
+                    <h3 className="text-lg font-bold dark:text-(--darkmode-text-color-primary) pb-4">
                         Email
                     </h3>
 
-                    <div className="pb-6">
+                    <div className="pb-4">
                         <a target="_blank" rel="noreferrer" href={`mailto:${myInfo.emailAddress}`} className="underline dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) dark:hover:text-(--darkmode-text-color-primary) hover:text-(--lightmode-text-color-primary)">
                             {myInfo.emailAddress}
                         </a>
@@ -67,11 +67,11 @@ export default function Contact() {
             {myInfo.phoneNumber && (
                 <>
 
-                    <h3 className="text-lg font-bold dark:text-(--darkmode-text-color-primary) pb-2">
+                    <h3 className="text-lg font-bold dark:text-(--darkmode-text-color-primary) pb-4">
                         Phone
                     </h3>
 
-                    <div className="pb-6">
+                    <div className="pb-4">
                         <a target="_blank" rel="noreferrer" href={`tel:${myInfo.phoneNumber}`} className="underline dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) dark:hover:text-(--darkmode-text-color-primary) hover:text-(--lightmode-text-color-primary)">
                             {myInfo.phoneNumber}
                         </a>
