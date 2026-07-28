@@ -6,7 +6,7 @@ interface DateRangeProps {
 export default function DateRange(props: DateRangeProps) {
 
     return (
-        <p className="text-md pb-2 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-tertiary)">
+        <p className="text-md pb-2 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
             <time datetime={props.startDate} >
                 {getDateSection(props.startDate)}
             </time>

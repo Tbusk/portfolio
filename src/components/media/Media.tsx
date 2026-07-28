@@ -19,7 +19,7 @@ export default function Media(props: MediaProps) {
     return (
         <Fragment>
 
-            <h3 className="font-bold text-(--lightmode-text-color-tertiary) pt-2 pb-3 dark:text-(--darkmode-text-color-tertiary)">
+            <h3 className="font-bold text-(--lightmode-text-color-primary) pt-2 pb-3 dark:text-(--darkmode-text-color-primary)">
                 Media
             </h3>
 
