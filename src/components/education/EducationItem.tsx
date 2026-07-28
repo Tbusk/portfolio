@@ -20,12 +20,12 @@ export default function EducationItem(props: EducationItemProps) {
 
             <SubSectionTitle name={props.name}/>
 
-            <div className="text-md pb-4 dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary)">
+            <div className="text-md pb-4 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
                 <a
                     rel="noreferrer"
                     target="_blank"
                     href={props.link}
-                    className="underline  dark:hover:text-(--darkmode-text-color-secondary) hover:text-(--lightmode-text-color-primary)"
+                    className="underline  visited:dark:text-(--darkmode-text-color-tertiary) visited:text-(--lightmode-text-color-tertiary) dark:hover:text-(--darkmode-text-color-secondary) hover:text-(--lightmode-text-color-primary)"
                 >
                     {props.institution}
                     <span className="sr-only">(opens in a new tab)</span>

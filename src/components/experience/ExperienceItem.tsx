@@ -34,7 +34,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
                 <a
                     rel="noreferrer"
                     target="_blank"
-                    className="text-md underline dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary) dark:hover:text-(--darkmode-text-color-secondary) hover:text-(--lightmode-text-color-primary)"
+                    className="text-md underline dark:text-(--darkmode-text-color-secondary) visited:dark:text-(--darkmode-text-color-tertiary) text-(--lightmode-text-color-secondary) visited:text-(--lightmode-text-color-tertiary) dark:hover:text-(--darkmode-text-color-primary) hover:text-(--lightmode-text-color-primary)"
                     href={props.website}
                 >
                     {props.company}
