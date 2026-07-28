@@ -24,7 +24,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
     const [showAll, setShowAll] = useState<boolean>(false);
 
     return (
-        <div className="pb-6">
+        <>
 
             <DateRange startDate={props.startDate} endDate={props.endDate}/>
 
@@ -90,6 +90,6 @@ export default function ExperienceItem(props: ExperienceItemProps) {
             {props.media && props.media.length > 0 && (
                 <Media items={props.media}/>
             )}
-        </div>
+        </>
     );
 }

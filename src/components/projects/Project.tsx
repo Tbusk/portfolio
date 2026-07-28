@@ -15,7 +15,7 @@ export interface ProjectProps {
 
 export default function Project(props: ProjectProps) {
     return (
-        <div className="pb-8">
+        <>
             <SubSectionTitle name={props.name}/>
 
             <div className="pb-2 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
@@ -41,6 +41,6 @@ export default function Project(props: ProjectProps) {
             {props.link && (
                 <ViewButton link={props.link} />
             )}
-        </div>
+        </>
     );
 }

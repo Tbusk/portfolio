@@ -10,7 +10,7 @@ export interface OpenSourceContributionProps {
 
 export default function OpenSourceContribution(props: OpenSourceContributionProps) {
     return (
-        <div className="pb-8">
+        <>
 
             <SubSectionTitle name={props.name}/>
 
@@ -33,6 +33,6 @@ export default function OpenSourceContribution(props: OpenSourceContributionProp
             {props.link && (
                 <ViewButton link={props.link} />
             )}
-        </div>
+        </>
     )
 }

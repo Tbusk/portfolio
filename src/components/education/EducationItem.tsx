@@ -15,7 +15,7 @@ export interface EducationItemProps {
 
 export default function EducationItem(props: EducationItemProps) {
     return (
-        <div className="pb-6">
+        <>
             <DateRange startDate={props.startDate} endDate={props.endDate}/>
 
             <SubSectionTitle name={props.name}/>
@@ -43,6 +43,6 @@ export default function EducationItem(props: EducationItemProps) {
             {props.courses && props.courses.length > 0 && (
                 <PillsComponent name="Courses" items={props.courses} />
             )}
-        </div>
+        </>
     );
 }
