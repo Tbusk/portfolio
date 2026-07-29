@@ -57,19 +57,19 @@ export default function ExperienceItem(props: ExperienceItemProps) {
             </div>
 
             {props.description && (
-                <div className="pb-4">
+                <div>
                     <h3 className={`text-md font-bold text-(--lightmode-text-color-primary) dark:text-(--darkmode-text-color-primary) pb-4 ${props.techStack && props.techStack.length > 0 ? 'pt-1' : ''}`}>
                         Key Highlights
                     </h3>
 
-                    <ul className="list-disc pl-4 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary) pb-4">
+                    <ul className="list-disc pl-4 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
                         {props.description.slice(0, (props.description.length > MAX_ITEMS ? MAX_ITEMS : props.description.length)).map((content, index) => (
-                            <li className="pl-2 py-1.5 last:pb-0" key={index}>
+                            <li className="pl-2 py-1.5 first:pt-0 last:pb-0" key={index}>
                                 {content}
                             </li>
                         ))}
                         {props.description.length > MAX_ITEMS && showAll && props.description.slice(MAX_ITEMS, props.description.length).map((content, index) => (
-                            <li className="pl-2 py-1.5 last:pb-0" key={index}>
+                            <li className="pl-2 py-1.5 first:pt-0 last:pb-0" key={index}>
                                 {content}
                             </li>
                         ))}
@@ -78,7 +78,7 @@ export default function ExperienceItem(props: ExperienceItemProps) {
             )}
 
             {props.description && props.description.length > MAX_ITEMS && (
-                <div>
+                <div className="pt-4">
                     {!showAll ? (
                         <ShowHideButton setShowAll={setShowAll} showAll={true} description="Expand"/>
                     ) : (
