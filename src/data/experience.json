@@ -6,17 +6,17 @@
       "jobTitle": "Software Engineer",
       "startDate": "2024-6-1",
       "endDate": null,
-      "summary": "Building full-stack and automation solutions for a service and technology company serving 1,000+ businesses using Java, Spring Boot, React, TypeScript, and SQL.",
+      "summary": "Building full-stack, integration, and automation solutions for a service and technology company serving 1,000+ businesses.",
       "description": [
-        "Built a payment reconciliation automation between Stripe, an ERP, and the company's billing portal using Java, webhooks, and Microsoft SQL Server stored procedures, eliminating up to 3 days per month of manual accounting.",
-        "Built an HR recruiting pipeline automation syncing assessment reports and routing applicants across 50+ job postings using Java, Quarkus, Google Cloud Platform, and webhooks, eliminating up to a day per month of manual activity.",
-        "Built 25+ RESTful APIs with JWT auth atop Microsoft SQL Server and MariaDB using Java, Spring Boot, and Spring Security, with TypeScript and React frontends for wallet and invoicing pages, and an internal CMS.",
-        "Engineered a batch onboarding system capable of onboarding any number of customers on any schedule using MariaDB, Google Sheets, and Java, cutting onboarding time from days to minutes and onboarding over 600 businesses.",
-        "Built a daily updated Google Sheets onboarding status tracker from billing portal data for the customer support team, eliminating the need for the development team manually creating reports for inquiries.",
-        "Built a weekly sales reporting automation for five teams using Java, Spring Boot, Gradle, and cron, saving 1–3 hours per week for the manager by replacing manual data compilation with an automated weekly report.",
-        "Built an automated printer meter entry pipeline, eliminating the need for Zapier and an external vendor, by parsing email meter readings and inserting validated entries directly into the ERP via stored procedures for 12+ printers.",
-        "Established a CI/CD pipeline with GitHub Actions, Google Cloud Platform, and Docker that reduced developer-involved deployment times from an hour to seconds, saving upward of a day per month of developer time.",
-        "Added 1,000+ unit, functional, and API tests using Java, JUnit 5, Mockito, MockMvc, RestTemplate, and GreenMail, achieving 70% method and 88% class coverage, preventing regressions and speeding up release time."
+        "Created a CRM integration for 5+ teams, emailing weekly reports to a sales manager, saving 150+ hours/yr.",
+        "Built a payment reconciliation automation with e-automate ERP and the portal, saving accountants 100+ hours/yr.",
+        "Added 1k+ tests for the company's billing portal, increasing code coverage to 77% method and 88% class coverage.",
+        "Created an email delivery integration in the company's billing portal, sending out 3k+ emails to customers.",
+        "Crafted an HR automation syncing candidate data to workflows for 50+ jobs, saving recruiters 40+ hours/yr.",
+        "Added an automatic payment feature to the billing portal, collecting 1k+ payments and enrolling 130+ businesses.",
+        "Established CI/CD pipeline for deployments, reducing developer-involved time from 4 hours/mo to 1 minute/mo.",
+        "Extended the billing portal with an onboarding management and tracking automation, onboarding 650+ businesses.",
+        "Automated printer meter reading entries for the company's e-automate ERP, syncing meter data for 12+ printers."
       ],
       "techStack": [
         "Java",
@@ -43,17 +43,7 @@
       "jobTitle": "Research Assistant",
       "startDate": "2026-1-12",
       "endDate": "2026-5-10",
-      "summary": "Researched ways to improve the Software Development Lifecycle through AI, evaluating existing educational and developer tooling. Translated findings into Ferrell, an LLM-powered VS Code extension delivering code reviews and Socratic mentorship to students across multiple universities.",
-      "description": [
-        "Built Ferrell, a custom AI-powered VS Code extension with a TypeScript and React frontend and a Java and Spring Boot backend on Amazon Web Services, providing students with code reviews, study tools, and Socratic mentorship.",
-        "Led the Agile workflow on GitHub for a Scrum team, creating user stories, organizing issues, assigning priorities, maintaining the backlog, and coordinating feature delivery across members and stakeholders.",
-        "Added global state persistence and cross-IDE support (VS Code, Cursor, Antigravity, VSCodium) to Ferrell, allowing chat sessions to survive window switching and closing.",
-        "Implemented CI/CD pipelines for testing, documentation, Docker image builds, code quality, and VSIX extension packaging using GitHub Actions, Docker, and Amazon Web Services.",
-        "Integrated Javadoc, Swagger/OpenAPI, TSDoc, and Markdown documentation into the Ferrell backend and frontend, fully documenting the project and enabling future expansion.",
-        "Researched and evaluated top educational and industry AI tools (ChatGPT Study Mode, Harvard's SocratiQ, JetBrains AI, Cursor, Antigravity) to identify features and inform the development of a custom Socratic LLM tool.",
-        "Presented as a featured speaker at Ferris AI Day, demonstrating a custom LLM-powered VS Code extension's architecture and features to a diverse audience of students, faculty, and administrators.",
-        "Engineered a custom Markdown prompt architecture that embeds code file content into the LLM user prompt, bypassing Amazon Bedrock's file type and count limits to support 60 code files across 400+ types and 4 image/pdfs."
-      ],
+      "summary": "Researched ways to improve the Software Development Lifecycle through AI, evaluating existing educational and developer tooling. Built a Claude-powered student tool providing Socratic-based learning assistance (study, assignment, code reviews) on Amazon Web Services with an IDE plugin in VS Code supporting 400+ file types for 3+ universities.",
       "techStack": [
         "Java",
         "Spring Boot",
@@ -99,7 +89,12 @@
       "jobTitle": "Software Engineer Intern",
       "startDate": "2023-9-12",
       "endDate": "2024-5-12",
-      "summary": "Built the MVP for AD Solution's billing portal through a university grant partnership. Delivered 30+ RESTful APIs with Java, Spring Boot, and SQL, and key customer-facing web components with React and TypeScript, such as login, payments, and usage. Coordinated Agile workflow for a Scrum team, managing sprints, the backlog, and user stories. The portal is still live today, serving over 650 businesses.",
+      "summary": "Built the MVP for AD Solution's billing portal through a university grant partnership.",
+      "description": [
+        "Built an invoice generator to consolidate and simplify the company's billing experience, delivering 2.7k+ invoices.",
+        "Integrated the company's e-automate ERP into the billing portal, a Microsoft SQL Server with 1k+ tables.",
+        "Added payment functionality integration with Stripe to the billing portal, processing 2k+ payments."
+      ],
       "techStack": [
         "Java",
         "Spring Boot",
