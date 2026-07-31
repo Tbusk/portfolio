@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import { useEffect, useState } from "preact/hooks";
 
 interface MediaProps {
     items: MediaItem[];
@@ -13,7 +14,17 @@ export interface MediaItem {
 
 export default function Media(props: MediaProps) {
 
-    const darkmode: boolean = localStorage.getItem('theme') === null ? window.matchMedia("(prefers-color-scheme: dark)").matches : localStorage.getItem('theme') === 'dark';
+    const [darkmode, setDarkMode] = useState<boolean>(
+        localStorage.getItem('theme') === null ? window.matchMedia("(prefers-color-scheme: dark)").matches : localStorage.getItem('theme') === 'dark'
+    );
+
+    useEffect(() => {
+        const observer = new MutationObserver(() => {
+            setDarkMode(document.documentElement.classList.contains('dark'));
+        });
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <div className="pb-4">
