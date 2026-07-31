@@ -150,16 +150,6 @@
           "alt": "My portfolio home page with light mode enabled"
         },
         {
-          "image": "/assets/images/lightmode/lightmode-portfolio-experience.png",
-          "mode": "light",
-          "alt": "My portfolio experience page with light mode enabled"
-        },
-        {
-          "image": "/assets/images/lightmode/lightmode-portfolio-education.png",
-          "mode": "light",
-          "alt": "My portfolio education page with light mode enabled"
-        },
-        {
           "image": "/assets/images/lightmode/lightmode-portfolio-projects.png",
           "mode": "light",
           "alt": "My portfolio projects page with light mode enabled"
@@ -170,24 +160,9 @@
           "alt": "My portfolio open source page with light mode enabled"
         },
         {
-          "image": "/assets/images/lightmode/lightmode-portfolio-contact.png",
-          "mode": "light",
-          "alt": "My portfolio contact page with light mode enabled"
-        },
-        {
           "image": "/assets/images/darkmode/darkmode-portfolio-home.png",
           "mode": "dark",
           "alt": "My portfolio home page with dark mode enabled"
-        },
-        {
-          "image": "/assets/images/darkmode/darkmode-portfolio-experience.png",
-          "mode": "dark",
-          "alt": "My portfolio experience page with dark mode enabled"
-        },
-        {
-          "image": "/assets/images/darkmode/darkmode-portfolio-education.png",
-          "mode": "dark",
-          "alt": "My portfolio education page with dark mode enabled"
         },
         {
           "image": "/assets/images/darkmode/darkmode-portfolio-projects.png",
@@ -198,11 +173,6 @@
           "image": "/assets/images/darkmode/darkmode-portfolio-opensource.png",
           "mode": "dark",
           "alt": "My portfolio open source page with dark mode enabled"
-        },
-        {
-          "image": "/assets/images/darkmode/darkmode-portfolio-contact.png",
-          "mode": "dark",
-          "alt": "My portfolio contact page with dark mode enabled"
         }
       ],
       "link": "https://github.com/Tbusk/portfolio"
