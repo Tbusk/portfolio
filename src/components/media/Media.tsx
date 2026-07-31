@@ -13,7 +13,7 @@ export interface MediaItem {
 
 export default function Media(props: MediaProps) {
 
-    const darkmode: boolean = localStorage.getItem('theme') === 'dark';
+    const darkmode: boolean = localStorage.getItem('theme') === null ? window.matchMedia("(prefers-color-scheme: dark)").matches : localStorage.getItem('theme') === 'dark';
 
     return (
         <div className="pb-4">

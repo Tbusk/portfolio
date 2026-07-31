@@ -1,7 +1,9 @@
 import { useState } from "preact/hooks";
 
 export function HeaderModeIcon() {
-    const [darkmode, setDarkMode] = useState<boolean>(localStorage.getItem('theme') === 'dark');
+    const [darkmode, setDarkMode] = useState<boolean>(
+        localStorage.getItem('theme') === null ? window.matchMedia("(prefers-color-scheme: dark)").matches : localStorage.getItem('theme') === 'dark'
+    );
 
     return (
 

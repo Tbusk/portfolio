@@ -6,7 +6,7 @@ import myInfoJson from "../../data/my-info.json";
 export default function NavbarContentMobile() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const darkmode: boolean = localStorage.getItem('theme') === 'dark';
+    const darkmode: boolean = localStorage.getItem('theme') === null ? window.matchMedia("(prefers-color-scheme: dark)").matches : localStorage.getItem('theme') === 'dark';
     const myInfo = myInfoJson;
 
     return (
