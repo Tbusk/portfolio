@@ -25,9 +25,13 @@
     <link rel="canonical" href="https://tbusk.com/">
     <!-- favicon svg originating from https://www.svgrepo.com/svg/528183/code-square with color tweaks with author Solar Icons-->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script>
+        const t = localStorage.getItem('theme') ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.classList.toggle("dark", t === 'dark');
+    </script>
 </head>
 <body>
-<div id="app"></div>
+<div id="app">
 <script type="module" src="/src/Entrypoint.tsx"></script>
 </body>
 </html>

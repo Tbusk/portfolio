@@ -8,8 +8,14 @@ export default function Footer() {
 
     return (
         <footer
-            className="pt-6 flex justify-center text-center md:text-start pb-8 px-2 text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary)">
-            Copyright © {year} {myInfo.name}. All rights reserved.
+            className="pt-6 px-4 md:px-0 py-4 text-(--lightmode-text-color-tertiary) dark:text-(--darkmode-text-color-tertiary) flex justify-between">
+            <span>
+                © {year} {myInfo.firstName} {myInfo.lastName}.
+            </span>
+
+            <a className="bg-(--lightmode-background-color) dark:bg-(--darkmode-background-color) hover:underline" href={`mailto:${myInfo.emailAddress}`}>
+                Contact Me →
+            </a>
         </footer>
     );
 }

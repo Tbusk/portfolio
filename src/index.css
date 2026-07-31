@@ -3,6 +3,8 @@
 @import "swiper/css/pagination";
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 html,body {
     scroll-behavior: smooth;
     min-height: 100vh;
@@ -26,8 +28,8 @@ html,body {
     --darkmode-border-color: #262a34;
     --lightmode-border-color: #e5e7eb;
     /* Accents */
-    --accent-color: #5294e2;
-    --accent-color-hover: #4781c7;
+    --accent-color: #698BD5;
+    --accent-color-hover: #779ff4;
     /* Pills */
     --darkmode-pill-background-color: #364153;
     --lightmode-pill-background-color: #e5e7eb;
@@ -35,15 +37,15 @@ html,body {
 
 .swiper-button-next, .swiper-button-prev {
     /* Same as accent color */
-    color: #5294e2;
+    color: #698BD5;
 }
 
 .swiper-pagination-bullet {
     /* Same as accent hover color */
-    background-color: #4781c7;
+    background-color: #779ff4;
 }
 
 .swiper-pagination-bullet-active {
     /* Same as accent color */
-    background-color: #5294e2;
+    background-color: #698BD5;
 }
