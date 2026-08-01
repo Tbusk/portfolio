@@ -32,7 +32,7 @@ export default function Homepage() {
             <p className="text-lg md:text-start py-4 dark:text-(--darkmode-text-color-secondary) text-(--lightmode-text-color-secondary)">
                 I currently work as a {myInfo.currentJobTitle} for
                 <span
-                    className="underline dark:text-(--darkmode-text-color-tertiary) hover:text-(--lightmode-text-color-primary) text-(--lightmode-text-color-secondary)">
+                    className="underline dark:text-(--darkmode-text-color-tertiary) hover:dark:text-(--darkmode-text-color-primary) hover:text-(--lightmode-text-color-primary) text-(--lightmode-text-color-secondary)">
                     <a href={myInfo.currentCompanyLink} target="_blank" rel="noreferrer">
                         {' '} {myInfo.currentCompanyName}
                     </a>
